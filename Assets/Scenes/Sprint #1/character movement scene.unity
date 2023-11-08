@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 1295483783}
   - component: {fileID: 1295483782}
   - component: {fileID: 1295483781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,8 +252,8 @@ Transform:
   m_GameObject: {fileID: 1295483780}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.34, z: 0}
-  m_LocalScale: {x: 13.287, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -2.6545, z: 0}
+  m_LocalScale: {x: 23.418337, y: 4.569, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -345,7 +345,7 @@ Transform:
   m_GameObject: {fileID: 2140016012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -34.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,7 +365,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 8739318}
   smoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 2.3, z: 0}
+  lowerYOffset: -1
 --- !u!1001 &387597169031205991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -374,17 +375,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3799489957006343312, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
+      propertyPath: jumpAmount
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8220977119055594499, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
       propertyPath: m_Name
       value: Bunny Hero Revised Colours 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8220977119055594499, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9222032477385387110, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.6962507
+      objectReference: {fileID: 0}
+    - target: {fileID: 9222032477385387110, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.6962507
+      objectReference: {fileID: 0}
+    - target: {fileID: 9222032477385387110, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.6962507
+      objectReference: {fileID: 0}
     - target: {fileID: 9222032477385387110, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.013619
       objectReference: {fileID: 0}
     - target: {fileID: 9222032477385387110, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.20428
       objectReference: {fileID: 0}
     - target: {fileID: 9222032477385387110, guid: fb62ec4c9a0f8456fac119dffb41f4c1, type: 3}
       propertyPath: m_LocalPosition.z
