@@ -99,8 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bcb790d505c74b17b53acc2b56ff3c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   moveSpeed: 5
   jumpSpeed: 20
+  runSpeed: 10
   rb: {fileID: 8537320125362362548}
   buttonTime: 0.3
   jumpAmount: 8

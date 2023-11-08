@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerControls : MonoBehaviour
 {
     //for animation
     public Animator animator;
@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private float jumpTime;
     private bool isGrounded; // Tracks whether the player is on the ground
     private bool isRunning; // Tracks whether the player is running
+    public bool isJumping = false; //track jumping
+
 
     void Start()
     {
@@ -33,10 +35,13 @@ public class PlayerMovement : MonoBehaviour
         // Check if the player is grounded (you need to set up a proper ground detection method)
         isGrounded = IsPlayerGrounded(); // You should implement this method
 
+        //update isjumping based on player input
+        isJumping = !isGrounded;
+
         // Update Animator parameters
         //animator.SetFloat("Speed", Mathf.Abs(moveX));
         //animator.SetBool("IsJumping", !isGrounded);
-        animator.SetBool("IsRunning", isRunning);
+        //animator.SetBool("IsRunning", isRunning);
 
         // Jumping is only allowed when grounded
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
