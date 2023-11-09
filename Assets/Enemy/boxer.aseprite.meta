@@ -1,0 +1,1312 @@
+fileFormatVersion: 2
+guid: 2380efbf90b17df4fbae54ea869dc0dc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: boxer_Frame_0
+    originalName: 
+    pivot: {x: 1.031915, y: -0.1923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 59
+      width: 47
+      height: 26
+    spriteID: 75135f24b6317a84187716fc99dbb68b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 59}
+  - name: boxer_Frame_1
+    originalName: 
+    pivot: {x: 1.031915, y: -0.1923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 59
+      width: 47
+      height: 26
+    spriteID: 16bd42ec908509447af778e3abaeabc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 159, y: 59}
+  - name: boxer_Frame_2
+    originalName: 
+    pivot: {x: 1.9782608, y: -0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 165
+      width: 23
+      height: 19
+    spriteID: eaccbf600b287ee4689d8a2261ee8b90
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 165}
+  - name: boxer_Frame_3
+    originalName: 
+    pivot: {x: 2.0227273, y: -0.29411766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 165
+      width: 22
+      height: 17
+    spriteID: db7a2cac8f0426942848ed3a95ecaecf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 165}
+  - name: boxer_Frame_4
+    originalName: 
+    pivot: {x: 1.7962964, y: -0.23809525}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 100
+      width: 27
+      height: 21
+    spriteID: b4a17598041c9c9429d307f673246a01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 213, y: 100}
+  - name: boxer_Frame_5
+    originalName: 
+    pivot: {x: 1.9782608, y: -0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 165
+      width: 23
+      height: 19
+    spriteID: 962732e67278e2343a7279cbc4fd1d39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 165}
+  - name: boxer_Frame_6
+    originalName: 
+    pivot: {x: 2.0227273, y: -0.29411766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 165
+      width: 22
+      height: 17
+    spriteID: af31a1686ba9e7243b6c04d73354f61f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 165}
+  - name: boxer_Frame_7
+    originalName: 
+    pivot: {x: 2.0227273, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 139
+      width: 22
+      height: 18
+    spriteID: d40b693945bdb454689243e7bce0975c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 139}
+  - name: boxer_Frame_8
+    originalName: 
+    pivot: {x: 1.5892857, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 139
+      width: 28
+      height: 18
+    spriteID: 026b4d8d457023442babf915bcad162d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 139}
+  - name: boxer_Frame_9
+    originalName: 
+    pivot: {x: 1.7115386, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 139
+      width: 26
+      height: 18
+    spriteID: b88f539c57596a74885c659e7f64f21f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 139}
+  - name: boxer_Frame_10
+    originalName: 
+    pivot: {x: 1.8541669, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 139
+      width: 24
+      height: 18
+    spriteID: f495fa2665798244e98d5f8a46218089
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 139}
+  - name: boxer_Frame_11
+    originalName: 
+    pivot: {x: 1.5344828, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 30
+      width: 29
+      height: 18
+    spriteID: 549375540df84ad429b370ff5ec2aa91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 30}
+  - name: boxer_Frame_12
+    originalName: 
+    pivot: {x: 1.5344828, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 30
+      width: 29
+      height: 18
+    spriteID: 6024416bfded42049b2d5298fa488359
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 197, y: 30}
+  - name: boxer_Frame_13
+    originalName: 
+    pivot: {x: 2.264706, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 57
+      y: 192
+      width: 17
+      height: 18
+    spriteID: 722e5b90c6a801340ac8421d4d0a4791
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 185}
+  - name: boxer_Frame_14
+    originalName: 
+    pivot: {x: 2.264706, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 192
+      width: 17
+      height: 18
+    spriteID: 008ea828c942b6e4b9a51b29d58aac48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 185}
+  - name: boxer_Frame_15
+    originalName: 
+    pivot: {x: 2.1944444, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 30
+      width: 18
+      height: 18
+    spriteID: 449aa32bceeb4514ebf64e538785a94c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 23}
+  - name: boxer_Frame_16
+    originalName: 
+    pivot: {x: 2.25, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 31
+      y: 192
+      width: 18
+      height: 18
+    spriteID: 32ef0d4d58612b944ba86eb5f75e9e67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 25, y: 185}
+  - name: boxer_Frame_17
+    originalName: 
+    pivot: {x: 0.8414633, y: -0.15625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 59
+      width: 41
+      height: 32
+    spriteID: 6d3401afa52fc0b42bbdaf9fb426d108
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 52}
+  - name: boxer_Frame_18
+    originalName: 
+    pivot: {x: 0.75, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 100
+      width: 34
+      height: 30
+    spriteID: 5367bee755e8f3145b302a09e49bde52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 93}
+  - name: boxer_Frame_19
+    originalName: 
+    pivot: {x: 0.8030303, y: -0.15625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 214
+      y: 59
+      width: 33
+      height: 32
+    spriteID: 40fb6b0c750c9eb4fa5636992680af07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 52}
+  - name: boxer_Frame_20
+    originalName: 
+    pivot: {x: 1.3947369, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 192
+      width: 19
+      height: 18
+    spriteID: 4c51fe1df416b6b4888c6ca302e55cad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -16, y: 185}
+  - name: boxer_Frame_21
+    originalName: 
+    pivot: {x: 0.42000002, y: -0.23809525}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 30
+      width: 75
+      height: 21
+    spriteID: 74ebd8ecb6cd64d4db5f9fe3cfbbd1cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -11, y: 23}
+  - name: boxer_Frame_22
+    originalName: 
+    pivot: {x: 0.39102563, y: -0.38888887}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 78
+      height: 18
+    spriteID: 7e838f6eb10573d46b229f00c1bf1e95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: -5}
+  - name: boxer_Frame_23
+    originalName: 
+    pivot: {x: 0.46195653, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 92
+      height: 18
+    spriteID: 7168c54a83977404786cf77bb1b7c485
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: -3}
+  - name: boxer_Frame_24
+    originalName: 
+    pivot: {x: 1.9285715, y: -0.29411766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 215
+      y: 165
+      width: 21
+      height: 17
+    spriteID: 2c50e880dbad30e47af9c7e7e5965571
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 209, y: 158}
+  - name: boxer_Frame_25
+    originalName: 
+    pivot: {x: 2.1388888, y: -0.29411766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 192
+      width: 18
+      height: 17
+    spriteID: 7765d608833b9144eba94f2741514429
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 185}
+  - name: boxer_Frame_26
+    originalName: 
+    pivot: {x: 1.9347826, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 139
+      width: 23
+      height: 18
+    spriteID: 234a7a63594e6c3469a72a20550ec34f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 139}
+  - name: boxer_Frame_27
+    originalName: 
+    pivot: {x: 1.4833333, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 30
+      width: 30
+      height: 18
+    spriteID: bf05a218914c45e4daf609645071d613
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 30}
+  - name: boxer_Frame_28
+    originalName: 
+    pivot: {x: 1.3787878, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 4
+      width: 33
+      height: 18
+    spriteID: 474c828ee87a4694c81abb8802568d20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 4}
+  - name: boxer_Frame_29
+    originalName: 
+    pivot: {x: 1.3906251, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 100
+      width: 32
+      height: 18
+    spriteID: 9829b6a2bb0493e44b05cd94c974e299
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 100}
+  - name: boxer_Frame_30
+    originalName: 
+    pivot: {x: 1.9347826, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 139
+      width: 23
+      height: 18
+    spriteID: 69ca172cd00a8fb45a3e50bf3f8f0b21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 171, y: 139}
+  - name: boxer_Frame_31
+    originalName: 
+    pivot: {x: 1.5576923, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 139
+      width: 26
+      height: 18
+    spriteID: 51428fb73ff875d4a8f7130d81414c8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 139}
+  - name: boxer_Frame_32
+    originalName: 
+    pivot: {x: 1.58, y: -0.21052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 165
+      width: 25
+      height: 19
+    spriteID: d1663bd20d94bac4ba36ae30f6c803e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 165}
+  - name: boxer_Frame_33
+    originalName: 
+    pivot: {x: 1.537037, y: -0.19047621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 30
+      width: 27
+      height: 21
+    spriteID: e6134e2ce6b273a44a5a084d7eb53537
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 30}
+  - name: boxer_Frame_34
+    originalName: 
+    pivot: {x: 1.4499999, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 100
+      width: 30
+      height: 28
+    spriteID: 7d00a334b4cbb554fb073a7835efd91d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 100}
+  - name: boxer_Frame_35
+    originalName: 
+    pivot: {x: 1.3382353, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 93
+      y: 100
+      width: 34
+      height: 30
+    spriteID: 86f37cd5af02aaf4b9a5d848cb4a25af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 93, y: 100}
+  - name: boxer_Frame_36
+    originalName: 
+    pivot: {x: 1.1923077, y: -0.06451613}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 39
+      height: 31
+    spriteID: e6e85a59bb3d6f540bf2acc220a888fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: boxer_Frame_37
+    originalName: 
+    pivot: {x: 1.1046512, y: -0.060606062}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 59
+      width: 43
+      height: 33
+    spriteID: e414391ef2d57cf42a1d11e0a6175297
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 59}
+  - name: boxer_Frame_38
+    originalName: 
+    pivot: {x: 2.175, y: -0.2631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 165
+      width: 20
+      height: 19
+    spriteID: 5c4c089363bbf154c8f964e805958f6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 165}
+  - name: boxer_Frame_39
+    originalName: 
+    pivot: {x: 2.175, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 139
+      width: 20
+      height: 18
+    spriteID: fe35e1af652acbd408981335d4e030ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 139}
+  - name: boxer_Frame_40
+    originalName: 
+    pivot: {x: 2.175, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 4
+      width: 20
+      height: 18
+    spriteID: df1c99970ccefc94ea2e2bdd9f74776f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 231, y: 4}
+  - name: boxer_Frame_41
+    originalName: 
+    pivot: {x: 2.175, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 165
+      width: 20
+      height: 18
+    spriteID: 044098eacea126a48ba0eb3f4a00b7c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 165}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 259373496
+    name: boxer
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: boxer_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 20
+        y: 5
+        width: 47
+        height: 26
+      spriteId: 75135f24b6317a84187716fc99dbb68b
+    - name: boxer_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 20
+        y: 5
+        width: 47
+        height: 26
+      spriteId: 16bd42ec908509447af778e3abaeabc7
+    - name: boxer_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 23
+        y: 5
+        width: 23
+        height: 19
+      spriteId: eaccbf600b287ee4689d8a2261ee8b90
+    - name: boxer_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 24
+        y: 5
+        width: 22
+        height: 17
+      spriteId: db7a2cac8f0426942848ed3a95ecaecf
+    - name: boxer_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 20
+        y: 5
+        width: 27
+        height: 21
+      spriteId: b4a17598041c9c9429d307f673246a01
+    - name: boxer_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 23
+        y: 5
+        width: 23
+        height: 19
+      spriteId: 962732e67278e2343a7279cbc4fd1d39
+    - name: boxer_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 24
+        y: 5
+        width: 22
+        height: 17
+      spriteId: af31a1686ba9e7243b6c04d73354f61f
+    - name: boxer_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 24
+        y: 5
+        width: 22
+        height: 18
+      spriteId: d40b693945bdb454689243e7bce0975c
+    - name: boxer_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 24
+        y: 5
+        width: 28
+        height: 18
+      spriteId: 026b4d8d457023442babf915bcad162d
+    - name: boxer_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 24
+        y: 5
+        width: 26
+        height: 18
+      spriteId: b88f539c57596a74885c659e7f64f21f
+    - name: boxer_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 24
+        y: 5
+        width: 24
+        height: 18
+      spriteId: f495fa2665798244e98d5f8a46218089
+    - name: boxer_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 24
+        y: 5
+        width: 29
+        height: 18
+      spriteId: 549375540df84ad429b370ff5ec2aa91
+    - name: boxer_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 24
+        y: 5
+        width: 29
+        height: 18
+      spriteId: 6024416bfded42049b2d5298fa488359
+    - name: boxer_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 722e5b90c6a801340ac8421d4d0a4791
+    - name: boxer_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 008ea828c942b6e4b9a51b29d58aac48
+    - name: boxer_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 449aa32bceeb4514ebf64e538785a94c
+    - name: boxer_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 32ef0d4d58612b944ba86eb5f75e9e67
+    - name: boxer_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 6d3401afa52fc0b42bbdaf9fb426d108
+    - name: boxer_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 5367bee755e8f3145b302a09e49bde52
+    - name: boxer_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 40fb6b0c750c9eb4fa5636992680af07
+    - name: boxer_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 4c51fe1df416b6b4888c6ca302e55cad
+    - name: boxer_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 74ebd8ecb6cd64d4db5f9fe3cfbbd1cd
+    - name: boxer_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 7e838f6eb10573d46b229f00c1bf1e95
+    - name: boxer_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 7168c54a83977404786cf77bb1b7c485
+    - name: boxer_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 2c50e880dbad30e47af9c7e7e5965571
+    - name: boxer_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 22
+        y: -2
+        width: 137
+        height: 44
+      spriteId: 7765d608833b9144eba94f2741514429
+    - name: boxer_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 24
+        y: 5
+        width: 23
+        height: 18
+      spriteId: 234a7a63594e6c3469a72a20550ec34f
+    - name: boxer_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 24
+        y: 5
+        width: 30
+        height: 18
+      spriteId: bf05a218914c45e4daf609645071d613
+    - name: boxer_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 23
+        y: 5
+        width: 33
+        height: 18
+      spriteId: 474c828ee87a4694c81abb8802568d20
+    - name: boxer_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 24
+        y: 5
+        width: 32
+        height: 18
+      spriteId: 9829b6a2bb0493e44b05cd94c974e299
+    - name: boxer_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 24
+        y: 5
+        width: 23
+        height: 18
+      spriteId: 69ca172cd00a8fb45a3e50bf3f8f0b21
+    - name: boxer_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 28
+        y: 5
+        width: 26
+        height: 18
+      spriteId: 51428fb73ff875d4a8f7130d81414c8a
+    - name: boxer_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 29
+        y: 4
+        width: 25
+        height: 19
+      spriteId: d1663bd20d94bac4ba36ae30f6c803e2
+    - name: boxer_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 27
+        y: 4
+        width: 27
+        height: 21
+      spriteId: e6134e2ce6b273a44a5a084d7eb53537
+    - name: boxer_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 25
+        y: 2
+        width: 30
+        height: 28
+      spriteId: 7d00a334b4cbb554fb073a7835efd91d
+    - name: boxer_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 23
+        y: 2
+        width: 34
+        height: 30
+      spriteId: 86f37cd5af02aaf4b9a5d848cb4a25af
+    - name: boxer_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 22
+        y: 2
+        width: 39
+        height: 31
+      spriteId: e6e85a59bb3d6f540bf2acc220a888fc
+    - name: boxer_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 21
+        y: 2
+        width: 43
+        height: 33
+      spriteId: e414391ef2d57cf42a1d11e0a6175297
+    - name: boxer_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 25
+        y: 5
+        width: 20
+        height: 19
+      spriteId: 5c4c089363bbf154c8f964e805958f6a
+    - name: boxer_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 25
+        y: 5
+        width: 20
+        height: 18
+      spriteId: fe35e1af652acbd408981335d4e030ef
+    - name: boxer_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 25
+        y: 5
+        width: 20
+        height: 18
+      spriteId: df1c99970ccefc94ea2e2bdd9f74776f
+    - name: boxer_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 25
+        y: 5
+        width: 20
+        height: 18
+      spriteId: 044098eacea126a48ba0eb3f4a00b7c9
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 137, y: 44}
