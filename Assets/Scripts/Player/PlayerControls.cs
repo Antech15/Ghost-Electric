@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-    //for animation
+    // for animation
     public Animator animator;
 
-    public float moveSpeed = 5f; // Public to allow changing speed in Unity Inspector
+    public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
-    public float runSpeed = 10f; // Speed while running
+    public float runSpeed = 10f;
     public Rigidbody2D rb;
     public float buttonTime = 0.3f;
     public float jumpAmount = 20;
     private float jumpTime;
-    private bool isGrounded; // Tracks whether the player is on the ground
-    private bool isRunning; // Tracks whether the player is running
-    public bool isJumping = false; //track jumping
+    public bool isGrounded;
+    public bool isRunning;
+    public bool isJumping = false;
+    public bool isFalling = false; // New variable for falling
+    private bool isFacingRight = true; // New variable to track facing direction
 
 
     void Start()
@@ -24,36 +26,34 @@ public class PlayerControls : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Input detection for 'WASD' keys
-        float moveX = Input.GetAxisRaw("Horizontal"); // 'A' 'D' keys and left/right arrow keys
-        float moveY = 0f; // Set moveY to 0 to prevent jumping with "W" key
-        isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift); // Check for Shift key
-
-        // Check if the player is grounded (you need to set up a proper ground detection method)
-        isGrounded = IsPlayerGrounded(); // You should implement this method
-
-        //update isjumping based on player input
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = 0f;
+        isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+        isGrounded = IsPlayerGrounded();
         isJumping = !isGrounded;
 
-        // Update Animator parameters
-        //animator.SetFloat("Speed", Mathf.Abs(moveX));
-        //animator.SetBool("IsJumping", !isGrounded);
-        //animator.SetBool("IsRunning", isRunning);
+        // Set IsFalling based on velocity (you may need to adjust this based on your game)
+        isFalling = rb.velocity.y < 0 && !isGrounded;
 
-        // Jumping is only allowed when grounded
+        animator.SetFloat("Speed", Mathf.Abs(moveX));
+        animator.SetBool("IsJumping", !isGrounded);
+        animator.SetBool("IsRunning", isRunning);
+        animator.SetBool("IsFalling", isFalling); // Update the IsFalling parameter
+
+         if (moveX != 0)
+        {
+            FlipSprite(moveX);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            //animator.setBool("IsJumping", true);
             rb.velocity = new Vector2(rb.velocity.x, jumpAmount);
         }
 
-        // Movement vector
         Vector2 move = new Vector2(moveX, moveY).normalized;
 
-        // Apply the movement to the player's position
         if (isRunning)
         {
             transform.position += new Vector3(move.x, move.y, 0) * runSpeed * Time.deltaTime;
@@ -64,19 +64,22 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    // Implement your own ground detection logic here
+     private void FlipSprite(float moveX)
+    {
+        if ((moveX > 0 && !isFacingRight) || (moveX < 0 && isFacingRight))
+        {
+            // Flip the sprite
+            isFacingRight = !isFacingRight;
+            transform.localScale = new Vector3(transform.localScale.x * -1, 5, 5);
+        }
+    }
+    
+
     private bool IsPlayerGrounded()
     {
-        // Define a layer mask for your ground objects.
         int groundLayerMask = LayerMask.GetMask("Ground");
-
-        // Define the size of the box collider for ground detection.
-        Vector2 boxSize = new Vector2(0.9f, 0.1f); // Adjust these values as needed.
-
-        // Cast a box from the player's position to check for ground collisions.
+        Vector2 boxSize = new Vector2(0.9f, 0.1f);
         Collider2D hit = Physics2D.OverlapBox(transform.position, boxSize, 0f, groundLayerMask);
-
-        // If the box overlaps with any ground object, the player is considered grounded.
         return hit != null;
     }
 }
