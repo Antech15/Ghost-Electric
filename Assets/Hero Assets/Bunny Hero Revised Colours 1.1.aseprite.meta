@@ -2,7 +2,87 @@ fileFormatVersion: 2
 guid: 5407b4e8f0adb47fa88fcf5c7711d20e
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Climb Wall
+    second: {fileID: 7400000, guid: f81629893d7145741add9b44f6ca7255, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Crouch Walk-----
+    second: {fileID: 7400000, guid: 6a227d518979d7b4ba0d9b3a8613d441, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Dash
+    second: {fileID: 7400000, guid: 4b615853ceaa59b4e9c6531f21de63f5, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Fall
+    second: {fileID: 7400000, guid: a7e1c9733daee924ab382e3a2fcd12b1, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Grab Wall
+    second: {fileID: 7400000, guid: 40ec571520cc32b4f98ac923dae4e5fd, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: 0e076839a2ff16f4dbdeb83a4f1b91f9, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle c
+    second: {fileID: 7400000, guid: b7cfdb8980d434f41abc154140998f3c, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Jump
+    second: {fileID: 7400000, guid: b34a8ab367f7d944e8e2b6fd3f21336e, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Knock Down
+    second: {fileID: 7400000, guid: 71a3576e33c1c154e9dde237039a1fbd, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Land
+    second: {fileID: 7400000, guid: 9659cebd47f2f3f4ca28875098d88f68, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Run
+    second: {fileID: 7400000, guid: 5b66aa01bf39eab4085a927ed6f2dd19, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stop
+    second: {fileID: 7400000, guid: 914028f797a6e094299998002c5be601, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Transition to courch
+    second: {fileID: 7400000, guid: 641c6b928c0e9ea48b02e5e1a3a54301, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Transition to jump
+    second: {fileID: 7400000, guid: d96e73a1c8f6b2d4ca50b48eb31c9f7e, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: WAll Hang Static
+    second: {fileID: 7400000, guid: 2108a99cd3da2f5409a9e0705a23641b, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: death
+    second: {fileID: 7400000, guid: f410834c0200c634982953d25915aa7d, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +175,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638351280887162381
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -2286,7 +2366,43 @@ ScriptedImporter:
       spriteId: 89c7da1986439664fa7b63e30e3d7773
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 48, y: 32}
