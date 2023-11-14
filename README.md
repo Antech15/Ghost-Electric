@@ -1,2 +1,2 @@
-# Electric-Ghost
+# Ghost-Electric
  Project for Game Programming
