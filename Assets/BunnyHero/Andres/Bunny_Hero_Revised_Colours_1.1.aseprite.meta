@@ -1,0 +1,2292 @@
+fileFormatVersion: 2
+guid: 5877670d57ef84a27a700cdf7315d651
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_0
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 167
+      width: 13
+      height: 15
+    spriteID: 0abf3fb48aff440b0af67e84684aedb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 167}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_1
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 190
+      width: 13
+      height: 15
+    spriteID: c13ecb2730b5a4af9b7a0c5fb99b0a66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 190}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_2
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 48
+      width: 13
+      height: 16
+    spriteID: 570fa45ad28f040ea97208fa9e2cc6a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 48}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_3
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 72
+      width: 13
+      height: 16
+    spriteID: d09d489fc9b8744a1b9287dd12bd73b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 72}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_4
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 99
+      width: 13
+      height: 17
+    spriteID: 040064ec0eca441fd88ade35cc3a7ae8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 99}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_5
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 13
+      height: 17
+    spriteID: 13d763f8ba25e4a6e9466659bfd05892
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 124}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_6
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 213
+      width: 13
+      height: 15
+    spriteID: 4de98a11a0b004ccf986c9d0d45065cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 213}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_7
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 96
+      width: 13
+      height: 16
+    spriteID: 052bcb0affff64fa08264e94149d2bde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 96}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_8
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 157
+      width: 13
+      height: 13
+    spriteID: c59aa1f0ea054405f97a8f80295791be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 157}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_9
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 240
+      width: 13
+      height: 12
+    spriteID: 2c9d0a98006124b1a9bad479ac13f8fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 240}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_10
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 242
+      width: 13
+      height: 8
+    spriteID: 4b10299ad68cc477192c4ce51fccacbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 242}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_11
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 55
+      width: 13
+      height: 8
+    spriteID: 48f5fe350f9e642458aa60219c65e7a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 55}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_12
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 71
+      width: 13
+      height: 8
+    spriteID: 81863d52790e14ca38739074572e3982
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 71}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_13
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 87
+      width: 13
+      height: 8
+    spriteID: f588d1e07d68b468e92d5f0b4ca57b5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 87}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_14
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 103
+      width: 13
+      height: 8
+    spriteID: 195c9a87121794e07b7c22be23c7fbbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 103}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_15
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 119
+      width: 13
+      height: 8
+    spriteID: 1a5f1974f4a0945468b5d7d7612f2ff3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 119}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_16
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 135
+      width: 13
+      height: 8
+    spriteID: db2420b53bfdf4b0eadea9e55573ff9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 135}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_17
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 151
+      width: 13
+      height: 8
+    spriteID: 4936a82988a6e457ea158ca71f494d4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 151}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_18
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 167
+      width: 13
+      height: 8
+    spriteID: 59c15863f8f53460ba9ef4db768609d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 167}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_19
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 183
+      width: 13
+      height: 8
+    spriteID: 49e096112c67c492bb4dd6bb92b7ff4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 183}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_20
+    originalName: 
+    pivot: {x: 0.50000006, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 23
+      width: 14
+      height: 8
+    spriteID: 9838e61f2f16c4f88875de3cfe7cfc16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_21
+    originalName: 
+    pivot: {x: 0.50000006, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 39
+      width: 14
+      height: 8
+    spriteID: 802944a8b4c2d4e5ebe6bb3cec822c9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 39}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_22
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 23
+      width: 13
+      height: 12
+    spriteID: 43199b7db255d44b78b4be9a38ca5e47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_23
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 178
+      width: 13
+      height: 13
+    spriteID: 8b40feb13238c4f3ebb7f3052adfe71c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 178}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_24
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 23
+      width: 13
+      height: 14
+    spriteID: 80c715ed5d640431da242f331a2a7645
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_25
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 120
+      width: 13
+      height: 16
+    spriteID: bfd87b07487f04997b082101ae1a78c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 120}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_26
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 144
+      width: 13
+      height: 16
+    spriteID: bbb37a52657a94ffa8d6b18c0c9b1b51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 144}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_27
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.05882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 149
+      width: 13
+      height: 17
+    spriteID: a5d22a83cd666480d84bf8d166318f28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 149}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_28
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 45
+      width: 13
+      height: 14
+    spriteID: b4930fd92d4034b5cbc0abafd8cd1b6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 45}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_29
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 168
+      width: 13
+      height: 16
+    spriteID: 8f8e32ea642d24917b9f40a99ea4d096
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 168}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_30
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 192
+      width: 13
+      height: 16
+    spriteID: e47ad9a83d9564d0fbddd2c1ef30136a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 192}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_31
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.05882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 174
+      width: 13
+      height: 17
+    spriteID: 1acb58162e1ee4979aaea074858ee74c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 174}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_32
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 216
+      width: 13
+      height: 16
+    spriteID: ff04cab9ae2274ae1ac8e28b892a3d4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 216}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_33
+    originalName: 
+    pivot: {x: 0.41666663, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 220
+      width: 12
+      height: 14
+    spriteID: d2c73a60cc5bf4073a129374a623b01f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 220}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_34
+    originalName: 
+    pivot: {x: 0.27272728, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 89
+      width: 11
+      height: 15
+    spriteID: c976de3340a2343c8a9e253d0b1ef1f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 89}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_35
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 23
+      width: 12
+      height: 16
+    spriteID: ac8c07ebce08e4e9aafbda2605225bb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_36
+    originalName: 
+    pivot: {x: 0.38461536, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 23
+      width: 13
+      height: 16
+    spriteID: 5576522b6b9e949bfa4a69b59f7b0633
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_37
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 26
+      height: 11
+    spriteID: 9b876aa0e8ed44520baa19cdb236941e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_38
+    originalName: 
+    pivot: {x: 0.41666663, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 23
+      width: 12
+      height: 14
+    spriteID: e8559ede3b3dc443fae8d2cf41259690
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_39
+    originalName: 
+    pivot: {x: 0.3636364, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 112
+      width: 11
+      height: 15
+    spriteID: a3250bd25a1ab45c4a9aaf6e948ae97e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 112}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_40
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 47
+      width: 12
+      height: 16
+    spriteID: 02682c3bb97dd4bb2a777c359d9b88d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 47}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_41
+    originalName: 
+    pivot: {x: 0.38461536, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 47
+      width: 13
+      height: 16
+    spriteID: 94c502d8beab54963bcf1b980be12841
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 47}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_42
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 67
+      width: 13
+      height: 14
+    spriteID: 720c82769b5b5466893e4dd231fd40c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 67}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_43
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 71
+      width: 13
+      height: 16
+    spriteID: b967a01ed3ede421297b9d52b1804a20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 71}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_44
+    originalName: 
+    pivot: {x: 0.41666663, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 71
+      width: 12
+      height: 16
+    spriteID: 9042f34521f2f46b591eccafb6281d0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 71}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_45
+    originalName: 
+    pivot: {x: 0.41666663, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 95
+      width: 12
+      height: 16
+    spriteID: 8d109a95914394b05a6b2246c647704c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 95}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_46
+    originalName: 
+    pivot: {x: 0.41666663, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 119
+      width: 12
+      height: 16
+    spriteID: 905e175f7b32d432088686a52b3b8a69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 119}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_47
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.1764706}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 199
+      width: 13
+      height: 17
+    spriteID: ef77610fa93074d12973dca273163737
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 199}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_48
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.1764706}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 49
+      width: 14
+      height: 17
+    spriteID: fd39b3537016b40eea12712b06040da3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 49}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_49
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.1764706}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 74
+      width: 14
+      height: 17
+    spriteID: be2a97ae10a784ddc96abfd67e6025d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 74}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_50
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 236
+      y: 4
+      width: 14
+      height: 11
+    spriteID: 457fc907e4afa44d4858420de2f9b92e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 236, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_51
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 89
+      width: 13
+      height: 14
+    spriteID: bff0c9f7e479545dd88155de28e8e123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 89}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_52
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 95
+      width: 13
+      height: 16
+    spriteID: 883703ddec1c74055adffe1c3f0987a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 95}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_53
+    originalName: 
+    pivot: {x: 0.46153846, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 236
+      width: 13
+      height: 15
+    spriteID: e92b4451da6444b13895e649274aed6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 236}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_54
+    originalName: 
+    pivot: {x: 0.25, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 45
+      width: 12
+      height: 14
+    spriteID: 0bd0340c94e1444668d6a3adc83d142f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 45}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_55
+    originalName: 
+    pivot: {x: -0.058823474, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 4
+      width: 17
+      height: 10
+    spriteID: c05b78ed168bf42ffad9c46cf9d02995
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_56
+    originalName: 
+    pivot: {x: -0.11764712, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 4
+      width: 17
+      height: 10
+    spriteID: 4e0aadf5e4503436c8ee8473d8662aec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_57
+    originalName: 
+    pivot: {x: -0.1875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 4
+      width: 16
+      height: 10
+    spriteID: 59c13ddcd538b4cae9edf88f5a8aa495
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_58
+    originalName: 
+    pivot: {x: -0.1875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 4
+      width: 16
+      height: 10
+    spriteID: 83bb7b4b753e94ef1b6242a57b29b0c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_59
+    originalName: 
+    pivot: {x: 0.38461536, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 119
+      width: 13
+      height: 16
+    spriteID: b878a79881b1748ca80cf280de229072
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 119}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_60
+    originalName: 
+    pivot: {x: 0.25, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 143
+      width: 12
+      height: 16
+    spriteID: 2cfd8c2cbd1e04926a6ae769a788fdad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 143}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_61
+    originalName: 
+    pivot: {x: 0.18181814, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 133
+      width: 11
+      height: 16
+    spriteID: f0b74430bc38f410a9ef23f38d577432
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 133}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_62
+    originalName: 
+    pivot: {x: 0.25, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 167
+      width: 12
+      height: 16
+    spriteID: 1177b0310f4284fb38566b223b00fe45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 167}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_63
+    originalName: 
+    pivot: {x: 0.25, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 191
+      width: 12
+      height: 16
+    spriteID: 75c007f89728b49b79cd572aebdcd1a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 191}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_64
+    originalName: 
+    pivot: {x: 0.25, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 215
+      width: 12
+      height: 16
+    spriteID: d3cb0143a6b56442caea9f3528f8654a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 215}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_71
+    originalName: 
+    pivot: {x: -0.30769223, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 111
+      width: 13
+      height: 14
+    spriteID: aa0bc5cd53a744085879fb52479302f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 111}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_72
+    originalName: 
+    pivot: {x: 0.25, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 67
+      width: 12
+      height: 14
+    spriteID: 3bf20aa9629ff4cdbba9c8f1f21e2add
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 67}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_73
+    originalName: 
+    pivot: {x: -0.058823474, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 4
+      width: 17
+      height: 10
+    spriteID: 4e37da2f322ea4a64a941a44e7e87890
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_74
+    originalName: 
+    pivot: {x: -0.11764712, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 4
+      width: 17
+      height: 10
+    spriteID: 7aac2fbb24fb54b339c12e117b767f0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_75
+    originalName: 
+    pivot: {x: -0.1764706, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 4
+      width: 17
+      height: 10
+    spriteID: 53093683a627f489aa904f912c51fbe8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_76
+    originalName: 
+    pivot: {x: -0.1764706, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 4
+      width: 17
+      height: 10
+    spriteID: d112d5eb1bfc748eab19ff1f256bff12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 4}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_65
+    originalName: 
+    pivot: {x: 0.23076923, y: -0.29411766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 13
+      height: 17
+    spriteID: 29a2ec9b47f5345de92d0fdfe3061755
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_66
+    originalName: 
+    pivot: {x: 0.1428571, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 23
+      width: 14
+      height: 18
+    spriteID: b83fb8c5f87bb434ea64bf7d555fdec0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_67
+    originalName: 
+    pivot: {x: 0.07692312, y: -0.5882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 23
+      width: 13
+      height: 17
+    spriteID: 81a2ccc6504894618903ad587e433f31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 23}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_68
+    originalName: 
+    pivot: {x: 0.07692312, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 199
+      width: 13
+      height: 13
+    spriteID: 36e2bc7c0fdac46d098204453b164b05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 199}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_69
+    originalName: 
+    pivot: {x: -0.076923005, y: -0.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 143
+      width: 13
+      height: 16
+    spriteID: 5635a1e33380544d7810caead89cb2fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 143}
+  - name: Bunny_Hero_Revised_Colours_1.1_Frame_70
+    originalName: 
+    pivot: {x: -0.25, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 239
+      width: 12
+      height: 13
+    spriteID: 0794d368d500e45cfb98cb07a68da7e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 239}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 339362353
+    name: Bunny_Hero_Revised_Colours_1.1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 15
+      spriteId: 0abf3fb48aff440b0af67e84684aedb9
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 15
+      spriteId: c13ecb2730b5a4af9b7a0c5fb99b0a66
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 16
+      spriteId: 570fa45ad28f040ea97208fa9e2cc6a1
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 16
+      spriteId: d09d489fc9b8744a1b9287dd12bd73b8
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 17
+      spriteId: 040064ec0eca441fd88ade35cc3a7ae8
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 17
+      spriteId: 13d763f8ba25e4a6e9466659bfd05892
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 15
+      spriteId: 4de98a11a0b004ccf986c9d0d45065cd
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 16
+      spriteId: 052bcb0affff64fa08264e94149d2bde
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 13
+      spriteId: c59aa1f0ea054405f97a8f80295791be
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 12
+      spriteId: 2c9d0a98006124b1a9bad479ac13f8fb
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 4b10299ad68cc477192c4ce51fccacbc
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 48f5fe350f9e642458aa60219c65e7a9
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 81863d52790e14ca38739074572e3982
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: f588d1e07d68b468e92d5f0b4ca57b5e
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 195c9a87121794e07b7c22be23c7fbbf
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 1a5f1974f4a0945468b5d7d7612f2ff3
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: db2420b53bfdf4b0eadea9e55573ff9e
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 4936a82988a6e457ea158ca71f494d4f
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 59c15863f8f53460ba9ef4db768609d8
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 8
+      spriteId: 49e096112c67c492bb4dd6bb92b7ff4b
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 17
+        y: 0
+        width: 14
+        height: 8
+      spriteId: 9838e61f2f16c4f88875de3cfe7cfc16
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 17
+        y: 0
+        width: 14
+        height: 8
+      spriteId: 802944a8b4c2d4e5ebe6bb3cec822c9a
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 12
+      spriteId: 43199b7db255d44b78b4be9a38ca5e47
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 13
+      spriteId: 8b40feb13238c4f3ebb7f3052adfe71c
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 14
+      spriteId: 80c715ed5d640431da242f331a2a7645
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 16
+      spriteId: bfd87b07487f04997b082101ae1a78c4
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 18
+        y: 2
+        width: 13
+        height: 16
+      spriteId: bbb37a52657a94ffa8d6b18c0c9b1b51
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 18
+        y: 1
+        width: 13
+        height: 17
+      spriteId: a5d22a83cd666480d84bf8d166318f28
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 14
+      spriteId: b4930fd92d4034b5cbc0abafd8cd1b6d
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 16
+      spriteId: 8f8e32ea642d24917b9f40a99ea4d096
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 18
+        y: 2
+        width: 13
+        height: 16
+      spriteId: e47ad9a83d9564d0fbddd2c1ef30136a
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 18
+        y: 1
+        width: 13
+        height: 17
+      spriteId: 1acb58162e1ee4979aaea074858ee74c
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 18
+        y: 2
+        width: 13
+        height: 16
+      spriteId: ff04cab9ae2274ae1ac8e28b892a3d4e
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 19
+        y: 0
+        width: 12
+        height: 14
+      spriteId: d2c73a60cc5bf4073a129374a623b01f
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 21
+        y: 0
+        width: 11
+        height: 15
+      spriteId: c976de3340a2343c8a9e253d0b1ef1f7
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 20
+        y: 0
+        width: 12
+        height: 16
+      spriteId: ac8c07ebce08e4e9aafbda2605225bb1
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 19
+        y: 0
+        width: 13
+        height: 16
+      spriteId: 5576522b6b9e949bfa4a69b59f7b0633
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 11
+        y: 1
+        width: 26
+        height: 11
+      spriteId: 9b876aa0e8ed44520baa19cdb236941e
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 19
+        y: 0
+        width: 12
+        height: 14
+      spriteId: e8559ede3b3dc443fae8d2cf41259690
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 20
+        y: 0
+        width: 11
+        height: 15
+      spriteId: a3250bd25a1ab45c4a9aaf6e948ae97e
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 20
+        y: 0
+        width: 12
+        height: 16
+      spriteId: 02682c3bb97dd4bb2a777c359d9b88d5
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 19
+        y: 0
+        width: 13
+        height: 16
+      spriteId: 94c502d8beab54963bcf1b980be12841
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 14
+      spriteId: 720c82769b5b5466893e4dd231fd40c0
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 16
+      spriteId: b967a01ed3ede421297b9d52b1804a20
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 19
+        y: 2
+        width: 12
+        height: 16
+      spriteId: 9042f34521f2f46b591eccafb6281d0a
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 19
+        y: 2
+        width: 12
+        height: 16
+      spriteId: 8d109a95914394b05a6b2246c647704c
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 19
+        y: 2
+        width: 12
+        height: 16
+      spriteId: 905e175f7b32d432088686a52b3b8a69
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 18
+        y: 3
+        width: 13
+        height: 17
+      spriteId: ef77610fa93074d12973dca273163737
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 18
+        y: 3
+        width: 14
+        height: 17
+      spriteId: fd39b3537016b40eea12712b06040da3
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 18
+        y: 3
+        width: 14
+        height: 17
+      spriteId: be2a97ae10a784ddc96abfd67e6025d1
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 18
+        y: 0
+        width: 14
+        height: 11
+      spriteId: 457fc907e4afa44d4858420de2f9b92e
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 14
+      spriteId: bff0c9f7e479545dd88155de28e8e123
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 16
+      spriteId: 883703ddec1c74055adffe1c3f0987a0
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 18
+        y: 0
+        width: 13
+        height: 15
+      spriteId: e92b4451da6444b13895e649274aed6c
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 21
+        y: 0
+        width: 12
+        height: 14
+      spriteId: 0bd0340c94e1444668d6a3adc83d142f
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 25
+        y: 0
+        width: 17
+        height: 10
+      spriteId: c05b78ed168bf42ffad9c46cf9d02995
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 26
+        y: 0
+        width: 17
+        height: 10
+      spriteId: 4e0aadf5e4503436c8ee8473d8662aec
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 27
+        y: 0
+        width: 16
+        height: 10
+      spriteId: 59c13ddcd538b4cae9edf88f5a8aa495
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 27
+        y: 0
+        width: 16
+        height: 10
+      spriteId: 83bb7b4b753e94ef1b6242a57b29b0c0
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 19
+        y: 2
+        width: 13
+        height: 16
+      spriteId: b878a79881b1748ca80cf280de229072
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 21
+        y: 2
+        width: 12
+        height: 16
+      spriteId: 2cfd8c2cbd1e04926a6ae769a788fdad
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 22
+        y: 2
+        width: 11
+        height: 16
+      spriteId: f0b74430bc38f410a9ef23f38d577432
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 21
+        y: 2
+        width: 12
+        height: 16
+      spriteId: 1177b0310f4284fb38566b223b00fe45
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 21
+        y: 2
+        width: 12
+        height: 16
+      spriteId: 75c007f89728b49b79cd572aebdcd1a3
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 21
+        y: 2
+        width: 12
+        height: 16
+      spriteId: d3cb0143a6b56442caea9f3528f8654a
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 28
+        y: 16
+        width: 13
+        height: 14
+      spriteId: aa0bc5cd53a744085879fb52479302f9
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 21
+        y: 0
+        width: 12
+        height: 14
+      spriteId: 3bf20aa9629ff4cdbba9c8f1f21e2add
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 25
+        y: 0
+        width: 17
+        height: 10
+      spriteId: 4e37da2f322ea4a64a941a44e7e87890
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 26
+        y: 0
+        width: 17
+        height: 10
+      spriteId: 7aac2fbb24fb54b339c12e117b767f0a
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 27
+        y: 0
+        width: 17
+        height: 10
+      spriteId: 53093683a627f489aa904f912c51fbe8
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 27
+        y: 0
+        width: 17
+        height: 10
+      spriteId: d112d5eb1bfc748eab19ff1f256bff12
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 21
+        y: 5
+        width: 13
+        height: 17
+      spriteId: 29a2ec9b47f5345de92d0fdfe3061755
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 22
+        y: 9
+        width: 14
+        height: 18
+      spriteId: b83fb8c5f87bb434ea64bf7d555fdec0
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 23
+        y: 10
+        width: 13
+        height: 17
+      spriteId: 81a2ccc6504894618903ad587e433f31
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 23
+        y: 13
+        width: 13
+        height: 13
+      spriteId: 36e2bc7c0fdac46d098204453b164b05
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 25
+        y: 14
+        width: 13
+        height: 16
+      spriteId: 5635a1e33380544d7810caead89cb2fd
+    - name: Bunny_Hero_Revised_Colours_1.1_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 27
+        y: 16
+        width: 12
+        height: 13
+      spriteId: 0794d368d500e45cfb98cb07a68da7e2
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 48, y: 32}
