@@ -38,9 +38,10 @@ public class EnemyControl : EnemyFSM
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentPoint = pointB.transform;
-        //anim.SetBool("isRunning", true);
+        Debug.Log(currentPoint);
+        anim.SetBool("isRunning", true);
         curState = FSMState.Patrol;
-        curSpeed = 5.0f;
+        curSpeed = 2.0f;
         bDead = false;
         //elapsedTime = 0.0f;
         health = 100;
@@ -71,31 +72,37 @@ public class EnemyControl : EnemyFSM
         Debug.Log("In patrol state");
         distance = playerDistance();
         Debug.Log("Dist is " + distance);
-        if (distance > 10.0f)
+        if (distance > 0f)
         {
             curState = FSMState.Patrol;
-            Vector2 point = currentPoint.position - transform.position;
-            rb.velocity = new Vector2(curSpeed, 0);
-            if (transform.position.x == pointB.transform.position.x)
+            if (currentPoint == pointB.transform)
             {
-                flip();
                 rb.velocity = new Vector2(curSpeed, 0);
             }
-            else if(transform.position.x == pointA.transform.position.x)
+            else //if(transform.position.x == pointA.transform.position.x)
             {
-                flip();
                 rb.velocity = new Vector2(-curSpeed, 0);
             }
+            if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
+            {
+                //flip();
+                currentPoint = pointA.transform;
+               
+            }
+            if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
+            {
+                //flip();
+                currentPoint = pointB.transform;
+                
+            }
+            
 
 
         }
-       // else if (distance < 10.0f && distance >= 5.0f)
+        //else if (distance < 10.0f && distance >= 5.0f)
         //    curState = FSMState.Chase;
         //else if (distance < 5.0f)
-         //   curState = FSMState.Attack;
-
-
-        //transform.position += transform.right * curSpeed * Time.deltaTime;
+        //   curState = FSMState.Attack;
     }
 
     protected void UpdateChaseState()
@@ -131,6 +138,7 @@ public class EnemyControl : EnemyFSM
     private void flip()
     {
         Vector3 localScale = transform.localScale;
-        localScale.x = -1;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 }
