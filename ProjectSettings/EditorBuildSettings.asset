@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Sprint #1/Title-Screen.unity
-    guid: 5df8845e30eb7477bad7bb3dd0df7ddc
+    path: Assets/Scenes/Demo 1/Scene 0 - Title.unity
+    guid: 7ae3cfe38b56ba44d88569eca2cf7606
   - enabled: 1
-    path: Assets/Scenes/Sprint #1/levelplayertest.unity
-    guid: a4398ffc6cdee1c4a8980ad50655cc0d
+    path: Assets/Scenes/Demo 1/Scene 1 - Demo.unity
+    guid: f718da4164ada784ca93ea2154b029b8
   m_configObjects: {}
