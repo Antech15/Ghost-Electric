@@ -6,7 +6,7 @@ public class PlayerControls : MonoBehaviour
 {
     // for animation
     public Animator animator;
-
+    public AudioSource jump;
     public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
     public float runSpeed = 10f;
@@ -23,6 +23,7 @@ public class PlayerControls : MonoBehaviour
 
     void Start()
     {
+        jump = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
         // Freeze rotation along the Z-axis to prevent falling over
@@ -52,6 +53,7 @@ public class PlayerControls : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            jump.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpAmount);
         }
 
