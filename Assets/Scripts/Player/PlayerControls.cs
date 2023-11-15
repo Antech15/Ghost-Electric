@@ -24,6 +24,9 @@ public class PlayerControls : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        // Freeze rotation along the Z-axis to prevent falling over
+        rb.freezeRotation = true;
     }
 
     void Update()
@@ -42,7 +45,7 @@ public class PlayerControls : MonoBehaviour
         animator.SetBool("IsRunning", isRunning);
         animator.SetBool("IsFalling", isFalling); // Update the IsFalling parameter
 
-         if (moveX != 0)
+        if (moveX != 0)
         {
             FlipSprite(moveX);
         }
@@ -64,16 +67,16 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-     private void FlipSprite(float moveX)
+    private void FlipSprite(float moveX)
     {
         if ((moveX > 0 && !isFacingRight) || (moveX < 0 && isFacingRight))
         {
-            // Flip the sprite
+            // Flip the sprite by rotating the entire object
             isFacingRight = !isFacingRight;
-            transform.localScale = new Vector3(transform.localScale.x * -1, 5, 5);
+            transform.Rotate(0f, 180f, 0f);
         }
     }
-    
+
 
     private bool IsPlayerGrounded()
     {
