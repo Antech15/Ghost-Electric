@@ -1359,6 +1359,22 @@ PrefabInstance:
       propertyPath: pointB
       value: 
       objectReference: {fileID: 1626054949}
+    - target: {fileID: 2954044824707944643, guid: f50036d764fc1e549b81997847bd9ff1, type: 3}
+      propertyPath: m_Size.x
+      value: 0.19964892
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954044824707944643, guid: f50036d764fc1e549b81997847bd9ff1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.22111285
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954044824707944643, guid: f50036d764fc1e549b81997847bd9ff1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.31078008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954044824707944643, guid: f50036d764fc1e549b81997847bd9ff1, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.16002703
+      objectReference: {fileID: 0}
     - target: {fileID: 3671566189521735886, guid: f50036d764fc1e549b81997847bd9ff1, type: 3}
       propertyPath: m_FlipX
       value: 0
