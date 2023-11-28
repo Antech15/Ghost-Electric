@@ -7,6 +7,10 @@ public class PlayerControls : MonoBehaviour
     // for animation
     public Animator animator;
 
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+
     public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
     public float runSpeed = 10f;
@@ -23,6 +27,8 @@ public class PlayerControls : MonoBehaviour
 
     void Start()
     {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
 
         // Freeze rotation along the Z-axis to prevent falling over
@@ -71,6 +77,7 @@ public class PlayerControls : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpAmount);
+            TakeDamage(20);
         }
 
         Vector2 move = new Vector2(moveX, moveY).normalized;
@@ -102,6 +109,13 @@ public class PlayerControls : MonoBehaviour
         Vector2 boxSize = new Vector2(0.9f, 0.1f);
         Collider2D hit = Physics2D.OverlapBox(transform.position, boxSize, 0f, groundLayerMask);
         return hit != null;
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
     }
 
     IEnumerator ResetTrigger(Collider2D collider)
