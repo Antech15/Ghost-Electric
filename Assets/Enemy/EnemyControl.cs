@@ -10,6 +10,10 @@ public class EnemyControl : EnemyFSM
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
+    [SerializeField]
+    private BoxCollider Attack1HB;
+    [SerializeField]
+    private BoxCollider Attack2HB;
 
     public enum FSMState
     {
@@ -71,10 +75,11 @@ public class EnemyControl : EnemyFSM
 
     protected void UpdatePatrolState()
     {
+        anim.SetBool("isAttacking2", false);
         Debug.Log("In patrol state");
         distance = playerDistance();
-        Debug.Log("Dist is " + distance);
-        if (distance > 5.0f)
+        //Debug.Log("Dist is " + distance);
+        if (distance > 5.0f) //should change to distance > 6.0f once chase is finished
         {
             curState = FSMState.Patrol;
             if (currentPoint == pointB.transform)
@@ -101,10 +106,10 @@ public class EnemyControl : EnemyFSM
 
 
         }
+        //else if(distance > 4.0f && distance <= 6.0f)
+            //curState = FSMState.Chase;
         else if (distance > 2.0f && distance <= 4.0f)
             curState = FSMState.Attack2;
-        else if (distance <= 2.0f)
-           curState = FSMState.Attack1;
     }
 
     protected void UpdateChaseState()
@@ -117,16 +122,29 @@ public class EnemyControl : EnemyFSM
 
 
     }
-    protected void UpdateAttack1State() //Boxer: close punch
-    {
-        anim.SetBool("isAttacking1", true);
-        distance = playerDistance();
-    }
-
     protected void UpdateAttack2State() //Boxer: far strong punch
     {
         anim.SetBool("isAttacking2", true);
+        distance = playerDistance();
+        if (distance > 4.0f)
+            curState = FSMState.Patrol;
+        else if (distance > 2.0f && distance <= 4.0f)
+            curState = FSMState.Attack2;
+        else if (distance <= 2.0f)
+            curState = FSMState.Attack1;
     }
+    protected void UpdateAttack1State() //Boxer: close punch
+    {
+
+        anim.SetBool("isAttacking1", true);
+        distance = playerDistance();
+        if (distance > 2.0f)
+            curState = FSMState.Attack2;
+        else if (distance <= 2.0f)
+            curState = FSMState.Attack1;
+    }
+
+
     protected void UpdateDeadState()
     {
         curState = FSMState.Dead;
@@ -148,5 +166,19 @@ public class EnemyControl : EnemyFSM
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            //lower player health
+            Debug.Log("Hit player");
+        }
+        else if(other.gameObject.tag == "Bullet")
+        {
+            //lower enemy health
+            Debug.Log("Hit Enemy");
+        }
     }
 }
