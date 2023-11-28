@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControls : MonoBehaviour
+public class TestingHealth : MonoBehaviour
 {
     // for animation
     public Animator animator;
+
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
 
     public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
@@ -23,6 +27,8 @@ public class PlayerControls : MonoBehaviour
 
     void Start()
     {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
 
         // Freeze rotation along the Z-axis to prevent falling over
@@ -44,24 +50,6 @@ public class PlayerControls : MonoBehaviour
         animator.SetBool("IsJumping", !isGrounded);
         animator.SetBool("IsRunning", isRunning);
         animator.SetBool("IsFalling", isFalling); // Update the IsFalling parameter
-        animator.SetBool("IsGrounded", isGrounded);
-
-        //logic for dropping down through objects wirth the "Platform" Tag and "Ground" Layer when pressing the down arrow or s key twice quickly
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-        {
-            if (Time.time < jumpTime + buttonTime)
-            {
-                Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
-                foreach (Collider2D collider in colliders)
-                {
-                    if (collider.tag == "Platform")
-                    {
-                        StartCoroutine(ResetTrigger(collider));
-                    }
-                }
-            }
-            jumpTime = Time.time;
-        }
 
         if (moveX != 0)
         {
@@ -71,6 +59,7 @@ public class PlayerControls : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpAmount);
+            TakeDamage(20);
         }
 
         Vector2 move = new Vector2(moveX, moveY).normalized;
@@ -104,10 +93,10 @@ public class PlayerControls : MonoBehaviour
         return hit != null;
     }
 
-    IEnumerator ResetTrigger(Collider2D collider)
-{
-    collider.isTrigger = true;
-    yield return new WaitForSeconds(0.5f); // wait for 0.5 seconds
-    collider.isTrigger = false;
-}
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
+    }
 }
