@@ -44,6 +44,24 @@ public class PlayerControls : MonoBehaviour
         animator.SetBool("IsJumping", !isGrounded);
         animator.SetBool("IsRunning", isRunning);
         animator.SetBool("IsFalling", isFalling); // Update the IsFalling parameter
+        animator.SetBool("IsGrounded", isGrounded);
+
+        //logic for dropping down through objects wirth the "Platform" Tag and "Ground" Layer when pressing the down arrow or s key twice quickly
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        {
+            if (Time.time < jumpTime + buttonTime)
+            {
+                Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+                foreach (Collider2D collider in colliders)
+                {
+                    if (collider.tag == "Platform")
+                    {
+                        StartCoroutine(ResetTrigger(collider));
+                    }
+                }
+            }
+            jumpTime = Time.time;
+        }
 
         if (moveX != 0)
         {
@@ -85,4 +103,11 @@ public class PlayerControls : MonoBehaviour
         Collider2D hit = Physics2D.OverlapBox(transform.position, boxSize, 0f, groundLayerMask);
         return hit != null;
     }
+
+    IEnumerator ResetTrigger(Collider2D collider)
+{
+    collider.isTrigger = true;
+    yield return new WaitForSeconds(0.5f); // wait for 0.5 seconds
+    collider.isTrigger = false;
+}
 }
