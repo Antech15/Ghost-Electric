@@ -14,6 +14,7 @@ public class EnemyControl : EnemyFSM
     private BoxCollider Attack1HB;
     [SerializeField]
     private BoxCollider Attack2HB;
+    bool facingLeft = true;
 
     public enum FSMState
     {
@@ -43,7 +44,6 @@ public class EnemyControl : EnemyFSM
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentPoint = pointB.transform;
-        Debug.Log(currentPoint);
         anim.SetBool("isRunning", true);
         curState = FSMState.Patrol;
         curSpeed = 2.0f;
@@ -168,17 +168,9 @@ public class EnemyControl : EnemyFSM
         transform.localScale = localScale;
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
-        {
-            //lower player health
-            Debug.Log("Hit player");
-        }
-        else if(other.gameObject.tag == "Bullet")
-        {
-            //lower enemy health
-            Debug.Log("Hit Enemy");
-        }
+        //lower player health
+        Debug.Log("Hit player");
     }
 }
