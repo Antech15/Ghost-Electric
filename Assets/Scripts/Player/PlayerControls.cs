@@ -7,6 +7,9 @@ public class PlayerControls : MonoBehaviour
     // for animation
     public Animator animator;
 
+    private Ray ray;
+	private RaycastHit2D ray_cast_hit;
+    public GameObject fx_prefab;
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
@@ -115,6 +118,14 @@ public class PlayerControls : MonoBehaviour
     {
         currentHealth -= damage;
 
+        healthBar.SetHealth(currentHealth);
+        
+    }
+
+    public void add25()
+    {
+        Instantiate(fx_prefab);
+        currentHealth += 25;
         healthBar.SetHealth(currentHealth);
     }
 
