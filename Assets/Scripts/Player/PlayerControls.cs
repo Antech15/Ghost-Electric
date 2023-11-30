@@ -86,7 +86,6 @@ public class PlayerControls : MonoBehaviour
         {
             jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpAmount);
-            TakeDamage(20);
         }
 
         Vector2 move = new Vector2(moveX, moveY).normalized;
