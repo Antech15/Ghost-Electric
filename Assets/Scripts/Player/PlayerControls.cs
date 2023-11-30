@@ -7,6 +7,15 @@ public class PlayerControls : MonoBehaviour
     // for animation
     public Animator animator;
 
+    private Ray ray;
+	private RaycastHit2D ray_cast_hit;
+    public GameObject fx_prefab;
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+    public AudioSource jumpSound;
+
+    public AudioSource healSound;
     public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
     public float runSpeed = 10f;
@@ -23,6 +32,11 @@ public class PlayerControls : MonoBehaviour
 
     void Start()
     {
+        AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
+        jumpSound = audioSources[0];
+        healSound = audioSources[2];
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
 
         // Freeze rotation along the Z-axis to prevent falling over
@@ -70,7 +84,9 @@ public class PlayerControls : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpAmount);
+            TakeDamage(20);
         }
 
         Vector2 move = new Vector2(moveX, moveY).normalized;
@@ -102,6 +118,30 @@ public class PlayerControls : MonoBehaviour
         Vector2 boxSize = new Vector2(0.9f, 0.1f);
         Collider2D hit = Physics2D.OverlapBox(transform.position, boxSize, 0f, groundLayerMask);
         return hit != null;
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
+        
+    }
+
+    public void add25()
+    {
+        healSound.Play();
+        if(currentHealth+25 > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else{
+            
+            currentHealth += 25;
+            
+        }
+        Instantiate(fx_prefab);
+        healthBar.SetHealth(currentHealth);
     }
 
     IEnumerator ResetTrigger(Collider2D collider)
