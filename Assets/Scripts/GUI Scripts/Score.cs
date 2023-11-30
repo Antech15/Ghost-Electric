@@ -18,6 +18,7 @@ public class Score : MonoBehaviour
     public void smallElim()
     {
         ScoreCount.text = (Convert.ToInt32(ScoreCount.text) + 25).ToString();
+        //Debug.Log((Convert.ToInt32(ScoreCount.text) + 25));
     }
 
     //Function that adds 100 score if the player elimnates a medium enemy

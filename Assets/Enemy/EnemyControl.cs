@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class EnemyControl : EnemyFSM
 {
+    
     public GameObject pointA;
     public GameObject pointB;
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
+
     //[SerializeField]
     //private BoxCollider Attack1HB;
     //[SerializeField]
@@ -70,8 +72,10 @@ public class EnemyControl : EnemyFSM
         elapsedTime += Time.deltaTime;
 
         //Go to dead state is no health left
-        if (health <= 0)
+        if (health <= 0){
+            
             curState = FSMState.Dead;
+        }
     }
 
     protected void UpdatePatrolState()
@@ -147,6 +151,8 @@ public class EnemyControl : EnemyFSM
     }
     protected void UpdateAttack1State() //Boxer: close punch
     {
+
+        
         anim.SetBool("isAttacking2", false);
         anim.SetBool("isRunning", false);
         if (transform.position.x < player.transform.position.x && !facingRight)
@@ -167,7 +173,9 @@ public class EnemyControl : EnemyFSM
 
     protected void UpdateDeadState()
     {
+        
         curState = FSMState.Dead;
+       // scoreCount.smallElim();
 
     }
 
@@ -194,7 +202,9 @@ public class EnemyControl : EnemyFSM
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        //lower player health
-        Debug.Log("Hit player");
+        if(other.tag == "Player"){
+            //lower player health
+            Debug.Log("Hit player");
+        }
     }
 }
