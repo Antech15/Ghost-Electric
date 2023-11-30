@@ -15,6 +15,8 @@ public class PlayerControls : MonoBehaviour
     public HealthBar healthBar;
     public AudioSource jumpSound;
 
+    public AudioSource winSound;
+
     public AudioSource healSound;
     public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
@@ -35,6 +37,7 @@ public class PlayerControls : MonoBehaviour
         AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
         jumpSound = audioSources[0];
         healSound = audioSources[2];
+        winSound = audioSources[3];
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
@@ -157,6 +160,15 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
+    void onHitByBoss()
+    {
+        TakeDamage(35);
+    }
+
+    public void winSoundd()
+    {
+        winSound.Play();
+    }
 
     IEnumerator ResetTrigger(Collider2D collider)
 {

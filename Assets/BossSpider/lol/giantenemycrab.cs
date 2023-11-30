@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class giantenemycrab : MonoBehaviour
 {
+        public AudioSource winSound;
+
     public float walkingSpeed = 2f;
     public float attackRange1 = 2f;
     public float attackRange2 = 1.5f;
@@ -18,6 +20,25 @@ public class giantenemycrab : MonoBehaviour
         animator = GetComponent<Animator>();
         StartCoroutine(BossBehavior());
         StartCoroutine(Jump());
+        AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
+        winSound = audioSources[0];
+    }
+
+    void Update()
+    {
+        //when boss is dead, play death animation and destroy object after 2 seconds
+        //get the current health from the enemies EnemyHealth script
+        if (GetComponent<EnemyHealth>().health <= 0)
+        {
+            //play win music attached to player
+            targetPlayer.GetComponent<PlayerControls>().winSoundd();
+        
+            animator.SetTrigger("Death");
+            Destroy(gameObject, 7f);
+
+            //stop game music
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
+        }
     }
 
     private IEnumerator BossBehavior()
@@ -100,12 +121,19 @@ public class giantenemycrab : MonoBehaviour
     private void PerformAttack1()
     {
         animator.SetTrigger("Attack1");
+
+        //call Player's PlayerControls.cs TakeDamage() function
+        targetPlayer.GetComponent<PlayerControls>().TakeDamage(20);
+
     }
 
     private void PerformAttack2()
     {
         animator.SetTrigger("Attack2");
+        targetPlayer.GetComponent<PlayerControls>().TakeDamage(20);
     }
+
+    
     private IEnumerator Jump()
     {
         while (true)
@@ -157,4 +185,5 @@ public class giantenemycrab : MonoBehaviour
             yield return new WaitForSeconds(jumpInterval);
         }
     }
+
 }
