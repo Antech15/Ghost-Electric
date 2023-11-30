@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public Score scoreCount;
     public int health = 100;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
@@ -22,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
             StartCoroutine(FlashWhite());
             if (health <= 0)
             {
+                scoreCount.smallElim();
                 Explode();
             }
         }
