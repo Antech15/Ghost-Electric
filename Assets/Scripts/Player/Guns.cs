@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Guns : MonoBehaviour
 {
-
+    public AudioSource gunshot;
     public Transform arFirePoint;
     public GameObject arBulletPrefab;
 
+    void Start()
+    {
+        AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
+        
+        gunshot = audioSources[1];
+    }
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +27,7 @@ public class Guns : MonoBehaviour
     void Shoot()
     {
         // Shooting logic
+        gunshot.Play();
         Instantiate(arBulletPrefab, arFirePoint.position, arFirePoint.rotation);
     }
 }
