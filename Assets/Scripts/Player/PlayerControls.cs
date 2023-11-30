@@ -13,7 +13,9 @@ public class PlayerControls : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    public AudioSource jumpSound;
 
+    public AudioSource healSound;
     public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
     public float runSpeed = 10f;
@@ -30,6 +32,9 @@ public class PlayerControls : MonoBehaviour
 
     void Start()
     {
+        AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
+        jumpSound = audioSources[0];
+        healSound = audioSources[2];
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
@@ -79,6 +84,7 @@ public class PlayerControls : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpAmount);
             TakeDamage(20);
         }
@@ -124,8 +130,17 @@ public class PlayerControls : MonoBehaviour
 
     public void add25()
     {
+        healSound.Play();
+        if(currentHealth+25 > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else{
+            
+            currentHealth += 25;
+            
+        }
         Instantiate(fx_prefab);
-        currentHealth += 25;
         healthBar.SetHealth(currentHealth);
     }
 

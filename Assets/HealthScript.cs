@@ -6,19 +6,20 @@ public class HealthScript : MonoBehaviour
 {
     public float rotationSpeed = 100f;
     public float spinSpeed = 150f;
-    
+    //public AudioSource healSound;
     public PlayerControls player;
     
 
     void Start()
     {
-
+        //healSound = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
+            //healSound.Play();
             player.add25();
             Destroy(gameObject);
         }
