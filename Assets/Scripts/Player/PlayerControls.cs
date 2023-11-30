@@ -54,12 +54,13 @@ public class PlayerControls : MonoBehaviour
         // Set IsFalling based on velocity (you may need to adjust this based on your game)
         isFalling = rb.velocity.y < 0 && !isGrounded;
 
-        animator.SetFloat("Speed", Mathf.Abs(moveX));
+        //animator.SetFloat("Speed", Mathf.Abs(moveX));
         animator.SetBool("IsJumping", !isGrounded);
         animator.SetBool("IsRunning", isRunning);
         animator.SetBool("IsFalling", isFalling); // Update the IsFalling parameter
         animator.SetBool("IsGrounded", isGrounded);
 
+        
         //logic for dropping down through objects wirth the "Platform" Tag and "Ground" Layer when pressing the down arrow or s key twice quickly
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
@@ -119,7 +120,7 @@ public class PlayerControls : MonoBehaviour
         return hit != null;
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
 
@@ -139,9 +140,23 @@ public class PlayerControls : MonoBehaviour
             currentHealth += 25;
             
         }
-        Instantiate(fx_prefab);
+        //Instantiate(fx_prefab);
         healthBar.SetHealth(currentHealth);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Collision Detected");
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+        // The player collided with an object tagged as "Enemy"
+        // You can add your logic here, such as playing a sound or taking damage.
+        // healSound.Play();
+            TakeDamage(20);
+        // Destroy(gameObject); // This line would destroy the player, be cautious if this is intended.
+        }
+    }
+
 
     IEnumerator ResetTrigger(Collider2D collider)
 {
