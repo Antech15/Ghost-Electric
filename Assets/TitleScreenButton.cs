@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TitleScreenButton : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class TitleScreenButton : MonoBehaviour
         // Draw a button to start the game
         if (GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Start Game", buttonStyle))
         {
-          Application.LoadLevel(1);//Jumos to levelplayertest
+          SceneManager.LoadScene("Level 1 - Outskirts");//Jumos to levelplayertest
         }
     }
 }

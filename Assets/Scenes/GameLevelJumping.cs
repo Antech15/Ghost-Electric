@@ -13,7 +13,8 @@ public class SceneJump2 : MonoBehaviour
             SceneManager.LoadScene("Slums"); // Scene you want to jump to name
         }
         //if we are in Slums, jump to the next scene
-        else
+        
+        else if (collision.gameObject.CompareTag("Player") && SceneManager.GetActiveScene().name == "Slums")
         {
             SceneManager.LoadScene("Boss1"); // Scene you want to jump to name
         }
