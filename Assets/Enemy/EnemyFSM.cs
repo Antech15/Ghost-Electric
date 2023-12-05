@@ -13,6 +13,7 @@ public class EnemyFSM : MonoBehaviour
     //List of points for patrolling
     protected GameObject[] pointList;
     protected float elapsedTime;
+    protected float attackTime;
 
     protected virtual void Initialize() { }
     protected virtual void FSMUpdate() { }
