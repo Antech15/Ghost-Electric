@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class giantenemycrab : MonoBehaviour
 {
-        public AudioSource winSound;
+    public AudioSource winSound;
 
+    
     public float walkingSpeed = 2f;
     public float attackRange1 = 2f;
     public float attackRange2 = 1.5f;
@@ -17,11 +18,12 @@ public class giantenemycrab : MonoBehaviour
 
     private void Start()
     {
+        
         animator = GetComponent<Animator>();
         StartCoroutine(BossBehavior());
         StartCoroutine(Jump());
-        AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
-        winSound = audioSources[0];
+        //AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
+        //winSound = audioSources[0];
     }
 
     void Update()
@@ -31,6 +33,7 @@ public class giantenemycrab : MonoBehaviour
         if (GetComponent<EnemyHealth>().health <= 0)
         {
             //play win music attached to player
+           
             targetPlayer.GetComponent<PlayerControls>().winSoundd();
         
             animator.SetTrigger("Death");
