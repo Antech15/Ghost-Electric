@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 3e2e61c40c2cfea48bd79932a27d5fdf
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: archerGR_Frame_0
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 123
+      width: 17
+      height: 15
+    spriteID: 1320166eec6a9a14595624872c17b59a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 123}
+  - name: archerGR_Frame_1
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 146
+      width: 17
+      height: 15
+    spriteID: 58041c58e53cfe4418b2215ec55a59af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 146}
+  - name: archerGR_Frame_2
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 27
+      width: 17
+      height: 16
+    spriteID: 105b690ee17ca4c4f877023ed2234cc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 27}
+  - name: archerGR_Frame_3
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 51
+      width: 17
+      height: 16
+    spriteID: d9e549c080980324e9e9c9be8de94ac6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 51}
+  - name: archerGR_Frame_4
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 75
+      width: 17
+      height: 16
+    spriteID: fa29b26a8ed11b6459ee10deea2112eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 75}
+  - name: archerGR_Frame_5
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 237
+      width: 17
+      height: 14
+    spriteID: ffa88d346e2f1474e9691746e853fe04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 237}
+  - name: archerGR_Frame_6
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 92
+      width: 17
+      height: 13
+    spriteID: 7116c98f0039e974fa4e9e64f7f549a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 92}
+  - name: archerGR_Frame_7
+    originalName: 
+    pivot: {x: 0.4705882, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 26
+      width: 17
+      height: 14
+    spriteID: 3a7eeb8523a81864eaab55f6d167dbca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 26}
+  - name: archerGR_Frame_8
+    originalName: 
+    pivot: {x: 0.4705882, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 120
+      width: 17
+      height: 17
+    spriteID: 784e3cc27b0534e4baf76176683253ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 120}
+  - name: archerGR_Frame_9
+    originalName: 
+    pivot: {x: 0.4705882, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 99
+      width: 17
+      height: 16
+    spriteID: 526ec56e91602284bbe2d40c96214189
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 99}
+  - name: archerGR_Frame_10
+    originalName: 
+    pivot: {x: 0.4705882, y: -0.05882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 145
+      width: 17
+      height: 17
+    spriteID: d22ba4b7a5daba24289ad69abc255107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 145}
+  - name: archerGR_Frame_11
+    originalName: 
+    pivot: {x: 0.38888893, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 215
+      width: 18
+      height: 14
+    spriteID: bd2588285f2dd9a409892f152c139c6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 215}
+  - name: archerGR_Frame_12
+    originalName: 
+    pivot: {x: 0.38888893, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 170
+      width: 18
+      height: 16
+    spriteID: 06445c17cc06d7243bf1853643d325fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 170}
+  - name: archerGR_Frame_13
+    originalName: 
+    pivot: {x: 0.38888893, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 194
+      width: 18
+      height: 16
+    spriteID: 6bbaeb68f44f6b845afa40b6b1bb185f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 194}
+  - name: archerGR_Frame_14
+    originalName: 
+    pivot: {x: 0.38888893, y: -0.05882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 72
+      width: 18
+      height: 17
+    spriteID: 40c134967e5dc044dbb1e8f6d9ea03aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 72}
+  - name: archerGR_Frame_15
+    originalName: 
+    pivot: {x: 0.36842108, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 218
+      width: 19
+      height: 15
+    spriteID: 15515480aec178e42baa224f6fd108a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 218}
+  - name: archerGR_Frame_16
+    originalName: 
+    pivot: {x: 0.42105258, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 4
+      width: 19
+      height: 15
+    spriteID: 28da22d262de27e45ae7f7912da9be47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 4}
+  - name: archerGR_Frame_17
+    originalName: 
+    pivot: {x: 0.45000002, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 97
+      width: 20
+      height: 15
+    spriteID: 28e44b9842ec4864582dda03067ecfe8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 97}
+  - name: archerGR_Frame_18
+    originalName: 
+    pivot: {x: 0.42857146, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 49
+      width: 21
+      height: 15
+    spriteID: 88936bdaf9a7cb9499b1a8057a9fff56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 49}
+  - name: archerGR_Frame_19
+    originalName: 
+    pivot: {x: 0.4545455, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 26
+      width: 22
+      height: 15
+    spriteID: 1a5f54586a2f1004ea772eb04eab71e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 26}
+  - name: archerGR_Frame_20
+    originalName: 
+    pivot: {x: 0.39285713, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 28
+      height: 14
+    spriteID: 380d79d54bda03e48b541e8c7ba8fcfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: archerGR_Frame_21
+    originalName: 
+    pivot: {x: 0.35000002, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 4
+      width: 20
+      height: 14
+    spriteID: 710199f892de80c4a800e411f46709cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 4}
+  - name: archerGR_Frame_22
+    originalName: 
+    pivot: {x: 0.5882353, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 169
+      width: 17
+      height: 15
+    spriteID: e10a7010f91e84d4b8f60beab704b5b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 169}
+  - name: archerGR_Frame_23
+    originalName: 
+    pivot: {x: 0.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 192
+      width: 17
+      height: 15
+    spriteID: c1ef115cc90db0a4195ec5ece466e989
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 192}
+  - name: archerGR_Frame_24
+    originalName: 
+    pivot: {x: 0.4705882, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 48
+      width: 17
+      height: 14
+    spriteID: 0f2e633af9d063a439fd85a88f919dfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 48}
+  - name: archerGR_Frame_25
+    originalName: 
+    pivot: {x: 0.4705882, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 70
+      width: 17
+      height: 14
+    spriteID: 1fda060c73b36a54b875fb081a9fac79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 70}
+  - name: archerGR_Frame_26
+    originalName: 
+    pivot: {x: 0.3529412, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 241
+      width: 17
+      height: 11
+    spriteID: d47358bd28a94314b8c6663d29954242
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 241}
+  - name: archerGR_Frame_27
+    originalName: 
+    pivot: {x: 0.29411763, y: 0.18181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 113
+      width: 17
+      height: 11
+    spriteID: a220765c67af5374db87bc13b587715f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 113}
+  - name: archerGR_Frame_28
+    originalName: 
+    pivot: {x: 0.23529415, y: 0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 132
+      width: 17
+      height: 10
+    spriteID: 4c817f15dd5b6e14084d653d0f2f249e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 132}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1229887680
+    name: archerGR
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: archerGR_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 1320166eec6a9a14595624872c17b59a
+    - name: archerGR_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 58041c58e53cfe4418b2215ec55a59af
+    - name: archerGR_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 16
+      spriteId: 105b690ee17ca4c4f877023ed2234cc7
+    - name: archerGR_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 16
+      spriteId: d9e549c080980324e9e9c9be8de94ac6
+    - name: archerGR_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 16
+      spriteId: fa29b26a8ed11b6459ee10deea2112eb
+    - name: archerGR_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 14
+      spriteId: ffa88d346e2f1474e9691746e853fe04
+    - name: archerGR_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 13
+      spriteId: 7116c98f0039e974fa4e9e64f7f549a1
+    - name: archerGR_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 16
+        y: 0
+        width: 17
+        height: 14
+      spriteId: 3a7eeb8523a81864eaab55f6d167dbca
+    - name: archerGR_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 16
+        y: 0
+        width: 17
+        height: 17
+      spriteId: 784e3cc27b0534e4baf76176683253ef
+    - name: archerGR_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 16
+        y: 2
+        width: 17
+        height: 16
+      spriteId: 526ec56e91602284bbe2d40c96214189
+    - name: archerGR_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 16
+        y: 1
+        width: 17
+        height: 17
+      spriteId: d22ba4b7a5daba24289ad69abc255107
+    - name: archerGR_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 17
+        y: 0
+        width: 18
+        height: 14
+      spriteId: bd2588285f2dd9a409892f152c139c6f
+    - name: archerGR_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 17
+        y: 0
+        width: 18
+        height: 16
+      spriteId: 06445c17cc06d7243bf1853643d325fe
+    - name: archerGR_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 17
+        y: 2
+        width: 18
+        height: 16
+      spriteId: 6bbaeb68f44f6b845afa40b6b1bb185f
+    - name: archerGR_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 17
+        y: 1
+        width: 18
+        height: 17
+      spriteId: 40c134967e5dc044dbb1e8f6d9ea03aa
+    - name: archerGR_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 17
+        y: 0
+        width: 19
+        height: 15
+      spriteId: 15515480aec178e42baa224f6fd108a7
+    - name: archerGR_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 16
+        y: 0
+        width: 19
+        height: 15
+      spriteId: 28da22d262de27e45ae7f7912da9be47
+    - name: archerGR_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 15
+        y: 0
+        width: 20
+        height: 15
+      spriteId: 28e44b9842ec4864582dda03067ecfe8
+    - name: archerGR_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 15
+        y: 0
+        width: 21
+        height: 15
+      spriteId: 88936bdaf9a7cb9499b1a8057a9fff56
+    - name: archerGR_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 14
+        y: 0
+        width: 22
+        height: 15
+      spriteId: 1a5f54586a2f1004ea772eb04eab71e1
+    - name: archerGR_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 13
+        y: 0
+        width: 28
+        height: 14
+      spriteId: 380d79d54bda03e48b541e8c7ba8fcfe
+    - name: archerGR_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 17
+        y: 0
+        width: 20
+        height: 14
+      spriteId: 710199f892de80c4a800e411f46709cc
+    - name: archerGR_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 14
+        y: 0
+        width: 17
+        height: 15
+      spriteId: e10a7010f91e84d4b8f60beab704b5b3
+    - name: archerGR_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 15
+        y: 0
+        width: 17
+        height: 15
+      spriteId: c1ef115cc90db0a4195ec5ece466e989
+    - name: archerGR_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 16
+        y: 0
+        width: 17
+        height: 14
+      spriteId: 0f2e633af9d063a439fd85a88f919dfe
+    - name: archerGR_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 16
+        y: 0
+        width: 17
+        height: 14
+      spriteId: 1fda060c73b36a54b875fb081a9fac79
+    - name: archerGR_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 18
+        y: 0
+        width: 17
+        height: 11
+      spriteId: d47358bd28a94314b8c6663d29954242
+    - name: archerGR_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 19
+        y: -2
+        width: 17
+        height: 11
+      spriteId: a220765c67af5374db87bc13b587715f
+    - name: archerGR_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 20
+        y: -2
+        width: 17
+        height: 10
+      spriteId: 4c817f15dd5b6e14084d653d0f2f249e
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 48, y: 32}

@@ -1,0 +1,1060 @@
+fileFormatVersion: 2
+guid: 7c17c239456451b4dbccaed07830c526
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: GoblinGS_Frame_0
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 76
+      width: 25
+      height: 15
+    spriteID: 6615100bac078be43bf10cf4cfdd7658
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 76}
+  - name: GoblinGS_Frame_1
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 99
+      width: 25
+      height: 15
+    spriteID: 754114ba3cb154143b67944ad47d03f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 99}
+  - name: GoblinGS_Frame_2
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 215
+      width: 25
+      height: 16
+    spriteID: 73dd2188e5f2bb6428f1ece7e909efde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 215}
+  - name: GoblinGS_Frame_3
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 25
+      height: 16
+    spriteID: d095281c73ea859489746120b31c1d7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 4}
+  - name: GoblinGS_Frame_4
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 28
+      width: 25
+      height: 16
+    spriteID: 8571b55f05b9b71479c1b35d9165ecfa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 28}
+  - name: GoblinGS_Frame_5
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 26
+      width: 25
+      height: 14
+    spriteID: f3b254678679c9c4488d7034be1303fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 26}
+  - name: GoblinGS_Frame_6
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 239
+      width: 25
+      height: 13
+    spriteID: 0310b4690a08e04448a390aca3e8144b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 239}
+  - name: GoblinGS_Frame_7
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 48
+      width: 25
+      height: 14
+    spriteID: eda666333474f0e4caa07beedde65518
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 48}
+  - name: GoblinGS_Frame_8
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 143
+      width: 25
+      height: 17
+    spriteID: 42898e53b69b3c848b6283a9e902d849
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 143}
+  - name: GoblinGS_Frame_9
+    originalName: 
+    pivot: {x: 0.72, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 52
+      width: 25
+      height: 16
+    spriteID: beeb84cb824598d49a52f8c8084ea107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 52}
+  - name: GoblinGS_Frame_10
+    originalName: 
+    pivot: {x: 0.72, y: -0.05882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 168
+      width: 25
+      height: 17
+    spriteID: 0786369b6d71a9a4ca6282c834cd52be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 168}
+  - name: GoblinGS_Frame_11
+    originalName: 
+    pivot: {x: 0.6666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 4
+      width: 27
+      height: 14
+    spriteID: d89753906ae2b3c4ba63ddd2234d5172
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 4}
+  - name: GoblinGS_Frame_12
+    originalName: 
+    pivot: {x: 0.6666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 95
+      width: 27
+      height: 16
+    spriteID: e9121bb730eb0704482933ed1ad6a0e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 95}
+  - name: GoblinGS_Frame_13
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 119
+      width: 27
+      height: 16
+    spriteID: 2cd9742cd892f6a4fa3ad6d352dfaceb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 119}
+  - name: GoblinGS_Frame_14
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.05882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 70
+      width: 27
+      height: 17
+    spriteID: 97072956f211d8a43a6e7116263d2fa0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 70}
+  - name: GoblinGS_Frame_15
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 122
+      width: 25
+      height: 15
+    spriteID: f78646b58b28ab3439f4d32c5c489e50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 122}
+  - name: GoblinGS_Frame_16
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 145
+      width: 25
+      height: 15
+    spriteID: 7df0d0d593531a9458942d33e883cac7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 145}
+  - name: GoblinGS_Frame_17
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 240
+      width: 25
+      height: 11
+    spriteID: 699e45ad520be6f46818f8cadde846a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 240}
+  - name: GoblinGS_Frame_18
+    originalName: 
+    pivot: {x: 0.86956525, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 168
+      width: 23
+      height: 16
+    spriteID: 1698ed6b7dfc8884d902bd56dcfaf01e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 168}
+  - name: GoblinGS_Frame_19
+    originalName: 
+    pivot: {x: 1, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 192
+      width: 23
+      height: 16
+    spriteID: 2f70ec6339eaaf04e8d1a98bdcd9205d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 192}
+  - name: GoblinGS_Frame_20
+    originalName: 
+    pivot: {x: 1, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 216
+      width: 23
+      height: 16
+    spriteID: 9ceb60882b73f484c9456110b67c3bef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 216}
+  - name: GoblinGS_Frame_21
+    originalName: 
+    pivot: {x: 0.42499998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 40
+      height: 15
+    spriteID: 5d7a8fbbfcea2724e97da2dd5a04d2e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: GoblinGS_Frame_22
+    originalName: 
+    pivot: {x: 0.43243244, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 27
+      width: 37
+      height: 14
+    spriteID: 2892ba643398a4544857bf2ec1927c67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 27}
+  - name: GoblinGS_Frame_23
+    originalName: 
+    pivot: {x: 0.44444445, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 49
+      width: 36
+      height: 13
+    spriteID: ece5994255243d54fabcbb947741c423
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 49}
+  - name: GoblinGS_Frame_24
+    originalName: 
+    pivot: {x: 0.55172414, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 193
+      width: 29
+      height: 14
+    spriteID: d126d113717e5ee43b838268c559f914
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 193}
+  - name: GoblinGS_Frame_25
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 70
+      width: 25
+      height: 14
+    spriteID: 194aee9a134294d4e8276ac244f99f6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 70}
+  - name: GoblinGS_Frame_26
+    originalName: 
+    pivot: {x: 0.72, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 92
+      width: 25
+      height: 14
+    spriteID: cec6a11374912414d83d7a0a2864cfd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 92}
+  - name: GoblinGS_Frame_27
+    originalName: 
+    pivot: {x: 0.68, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 152
+      width: 25
+      height: 11
+    spriteID: fb39e711e523b1940a71a33129b651e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 152}
+  - name: GoblinGS_Frame_28
+    originalName: 
+    pivot: {x: 0.6296297, y: 0.18181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 114
+      width: 27
+      height: 11
+    spriteID: 4991e0905d2974b41b66994c5b6d45dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 114}
+  - name: GoblinGS_Frame_29
+    originalName: 
+    pivot: {x: 0.68, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 171
+      width: 25
+      height: 11
+    spriteID: a5badb24a5dddb148aeb9bf646d3a8fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 171}
+  - name: GoblinGS_Frame_30
+    originalName: 
+    pivot: {x: 0.5925926, y: 0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 209
+      width: 27
+      height: 10
+    spriteID: 721e6fc5494c96c4db103e746d7cc73d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 209}
+  - name: GoblinGS_Frame_31
+    originalName: 
+    pivot: {x: 0.6296297, y: 0.18181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 133
+      width: 27
+      height: 11
+    spriteID: cca454e652a55c44cbae1816b211c0ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 133}
+  - name: GoblinGS_Frame_32
+    originalName: 
+    pivot: {x: 0.68, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 190
+      width: 25
+      height: 11
+    spriteID: 5461a78eacd91c44eb5793505549be81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 190}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1340135503
+    name: GoblinGS
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: GoblinGS_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 15
+      spriteId: 6615100bac078be43bf10cf4cfdd7658
+    - name: GoblinGS_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 15
+      spriteId: 754114ba3cb154143b67944ad47d03f2
+    - name: GoblinGS_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 16
+      spriteId: 73dd2188e5f2bb6428f1ece7e909efde
+    - name: GoblinGS_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 16
+      spriteId: d095281c73ea859489746120b31c1d7b
+    - name: GoblinGS_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 16
+      spriteId: 8571b55f05b9b71479c1b35d9165ecfa
+    - name: GoblinGS_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 14
+      spriteId: f3b254678679c9c4488d7034be1303fc
+    - name: GoblinGS_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 13
+      spriteId: 0310b4690a08e04448a390aca3e8144b
+    - name: GoblinGS_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 14
+      spriteId: eda666333474f0e4caa07beedde65518
+    - name: GoblinGS_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 17
+      spriteId: 42898e53b69b3c848b6283a9e902d849
+    - name: GoblinGS_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 5
+        y: 2
+        width: 25
+        height: 16
+      spriteId: beeb84cb824598d49a52f8c8084ea107
+    - name: GoblinGS_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 5
+        y: 1
+        width: 25
+        height: 17
+      spriteId: 0786369b6d71a9a4ca6282c834cd52be
+    - name: GoblinGS_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 5
+        y: 0
+        width: 27
+        height: 14
+      spriteId: d89753906ae2b3c4ba63ddd2234d5172
+    - name: GoblinGS_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 5
+        y: 0
+        width: 27
+        height: 16
+      spriteId: e9121bb730eb0704482933ed1ad6a0e6
+    - name: GoblinGS_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 5
+        y: 2
+        width: 27
+        height: 16
+      spriteId: 2cd9742cd892f6a4fa3ad6d352dfaceb
+    - name: GoblinGS_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 5
+        y: 1
+        width: 27
+        height: 17
+      spriteId: 97072956f211d8a43a6e7116263d2fa0
+    - name: GoblinGS_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 15
+      spriteId: f78646b58b28ab3439f4d32c5c489e50
+    - name: GoblinGS_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 15
+      spriteId: 7df0d0d593531a9458942d33e883cac7
+    - name: GoblinGS_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 11
+      spriteId: 699e45ad520be6f46818f8cadde846a4
+    - name: GoblinGS_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 3
+        y: 0
+        width: 23
+        height: 16
+      spriteId: 1698ed6b7dfc8884d902bd56dcfaf01e
+    - name: GoblinGS_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: 2
+        width: 23
+        height: 16
+      spriteId: 2f70ec6339eaaf04e8d1a98bdcd9205d
+    - name: GoblinGS_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: 3
+        width: 23
+        height: 16
+      spriteId: 9ceb60882b73f484c9456110b67c3bef
+    - name: GoblinGS_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 6
+        y: 0
+        width: 40
+        height: 15
+      spriteId: 5d7a8fbbfcea2724e97da2dd5a04d2e5
+    - name: GoblinGS_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 7
+        y: 0
+        width: 37
+        height: 14
+      spriteId: 2892ba643398a4544857bf2ec1927c67
+    - name: GoblinGS_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 7
+        y: 0
+        width: 36
+        height: 13
+      spriteId: ece5994255243d54fabcbb947741c423
+    - name: GoblinGS_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 7
+        y: 0
+        width: 29
+        height: 14
+      spriteId: d126d113717e5ee43b838268c559f914
+    - name: GoblinGS_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 14
+      spriteId: 194aee9a134294d4e8276ac244f99f6f
+    - name: GoblinGS_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 5
+        y: 0
+        width: 25
+        height: 14
+      spriteId: cec6a11374912414d83d7a0a2864cfd8
+    - name: GoblinGS_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 6
+        y: 0
+        width: 25
+        height: 11
+      spriteId: fb39e711e523b1940a71a33129b651e7
+    - name: GoblinGS_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 6
+        y: -2
+        width: 27
+        height: 11
+      spriteId: 4991e0905d2974b41b66994c5b6d45dc
+    - name: GoblinGS_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 6
+        y: 0
+        width: 25
+        height: 11
+      spriteId: a5badb24a5dddb148aeb9bf646d3a8fc
+    - name: GoblinGS_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 7
+        y: -2
+        width: 27
+        height: 10
+      spriteId: 721e6fc5494c96c4db103e746d7cc73d
+    - name: GoblinGS_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 6
+        y: -2
+        width: 27
+        height: 11
+      spriteId: cca454e652a55c44cbae1816b211c0ac
+    - name: GoblinGS_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 6
+        y: 0
+        width: 25
+        height: 11
+      spriteId: 5461a78eacd91c44eb5793505549be81
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 46, y: 19}
