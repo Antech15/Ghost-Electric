@@ -85,8 +85,6 @@ public class EnemyControl : EnemyFSM
         //Debug.Log("Dist is " + distance);
         if (distance > 5.0f) //should change to distance > 6.0f once chase is finished
         {
-            anim.SetBool("isAttacking1", false);
-            anim.SetBool("isAttacking2", false);
             anim.SetBool("isRunning", true);
             //anim.SetBool("isRunning", true);
             curState = FSMState.Patrol;
@@ -133,8 +131,8 @@ public class EnemyControl : EnemyFSM
     }
     protected void UpdateAttack2State() //Boxer: far strong punch
     {
-        anim.SetBool("isAttacking1", false);
-        anim.SetBool("isRunning", false);
+        //anim.SetBool("isAttacking1", false);
+        //anim.SetBool("isRunning", false);
         if (transform.position.x < player.transform.position.x && !facingRight)
             flip();
         else if (transform.position.x > player.transform.position.x && facingRight)
@@ -151,10 +149,8 @@ public class EnemyControl : EnemyFSM
     }
     protected void UpdateAttack1State() //Boxer: close punch
     {
-
-        
-        anim.SetBool("isAttacking2", false);
-        anim.SetBool("isRunning", false);
+        //anim.SetBool("isAttacking2", false);
+        //anim.SetBool("isRunning", false);
         if (transform.position.x < player.transform.position.x && !facingRight)
             flip();
         else if (transform.position.x > player.transform.position.x && facingRight)

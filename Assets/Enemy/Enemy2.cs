@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Enemy2 : EnemyFSM
@@ -24,6 +25,7 @@ public class Enemy2 : EnemyFSM
     public enum FSMState
     {
         None,
+        Idle,
         Patrol,
         Chase,
         Attack1,
@@ -37,7 +39,7 @@ public class Enemy2 : EnemyFSM
         anim = GetComponent<Animator>();
         anim.SetBool("isRunning", true);
         
-        range = 3.1f;
+       // range = 3.1f;
         initialPos = transform.position;
         curSpeed = 2.0f;
         elapsedTime = 0.0f;
@@ -53,7 +55,7 @@ public class Enemy2 : EnemyFSM
         switch (curState)
         {
             case FSMState.Patrol: UpdatePatrolState(); break;
-            case FSMState.Chase: UpdateChaseState(); break;
+            case FSMState.Idle: UpdateIdleState(); break;
             case FSMState.Attack1: UpdateAttack1State(); break;
             case FSMState.Attack2: UpdateAttack2State(); break;
             case FSMState.Dead: UpdateDeadState(); break;
@@ -61,6 +63,7 @@ public class Enemy2 : EnemyFSM
 
         //Update the time
         elapsedTime += Time.deltaTime;
+        attackTime += Time.deltaTime;
 
         //Go to dead state is no health left
         if (health <= 0)
@@ -74,8 +77,8 @@ public class Enemy2 : EnemyFSM
     {
         Debug.Log("In patrol state");
         distance = playerDistance();
-        //Debug.Log("Player dist is " + distance);
-        if (distance > 5.0f)
+        Debug.Log("Player dist is " + distance);
+        if (distance > 5.0f && !playerHeight())
         {
             elapsedTime += Time.deltaTime; //used so enemy doesn't flip infinitely at end points
             anim.SetBool("isAttacking1", false);
@@ -110,23 +113,30 @@ public class Enemy2 : EnemyFSM
                     rb.velocity = new Vector2(-curSpeed, 0);
                 }
             }
+            else if(distTraveled > range) //need to move enemy back to center to patrol again
+            {
+                Debug.Log("third");
+                if (facingRight)
+                    rb.velocity = new Vector2(curSpeed, 0);
+                else
+                    rb.velocity = new Vector2(-curSpeed, 0);
+            }
         }
         else if (distance > 2.0f && distance <= 4.0f)
             curState = FSMState.Attack2;
     }
 
-    protected void UpdateChaseState()
+    protected void UpdateIdleState()
     {
+        anim.SetBool("isIdle", true);
         distance = playerDistance();
-        if (distance > 10.0f)
+        if (distance > 5.0f)
             curState = FSMState.Patrol;
-        else if (distance < 5.0f)
-            curState = FSMState.Chase;
-
 
     }
     protected void UpdateAttack2State() //Boxer: far strong punch
     {
+        attackTime += Time.deltaTime;
         Debug.Log("In attack2 state");
         anim.SetBool("isAttacking1", false);
         anim.SetBool("isRunning", false);
@@ -138,12 +148,16 @@ public class Enemy2 : EnemyFSM
             curState = FSMState.Patrol;
         //else if (distance > 2.0f && distance <= 4.0f)
         //    curState = FSMState.Attack2;
+        else if(attackTime < 1.5f)
+        {
+            curState = FSMState.Idle;
+        }
         else if (distance <= 2.0f)
             curState = FSMState.Attack1;
     }
     protected void UpdateAttack1State() //Boxer: close punch
     {
-
+        attackTime = 0;
         Debug.Log("In attack1 state");
         anim.SetBool("isAttacking2", false);
         anim.SetBool("isRunning", false);
@@ -154,6 +168,8 @@ public class Enemy2 : EnemyFSM
             curState = FSMState.Patrol;
         else if (distance > 2.0f)
             curState = FSMState.Attack2;
+        else if (distance < 2.0f)
+            curState = FSMState.Attack1;
         //else if (distance <= 2.0f)
         //    curState = FSMState.Attack1;
     }
@@ -169,12 +185,18 @@ public class Enemy2 : EnemyFSM
 
     protected float playerDistance()
     {
-        float dist = Vector2.Distance(transform.position, player.transform.position);
+        float dist = transform.position.x - player.transform.position.x;
+        dist = Mathf.Abs(dist);
         return dist;
     }
-    protected void jump()
-    {
 
+    protected bool playerHeight()
+    {
+        //Debug.Log("enemy: " + transform.position.y + " player: " + player.transform.position.y);
+        if(transform.position.y < player.transform.position.y + 0.25f && player.transform.position.y-0.25f < transform.position.y)
+            return true;
+        else
+            return false;
     }
 
     private void facePlayer()
