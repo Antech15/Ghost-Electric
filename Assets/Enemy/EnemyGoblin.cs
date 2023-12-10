@@ -12,16 +12,19 @@ public class EnemyGoblin : EnemyFSM
     public float range;//enemy will travel from middle point + range on either side
     private float distTraveled; //tracks how much enemy traveled from middle point
     private Vector2 initialPos; //initial starting position of enemy (middle point)
-    bool facingRight; //which way enemy is facing
+    public static bool facingRight; //which way enemy is facing
     public FSMState curState; //Current state that the NPC is reaching
     public float curSpeed; //Speed of the enemy
     private int health;
     public GameObject player;
     protected float distance; //distance from player
-    private int hits = 0;
-    public Transform arrowFirePoint;
-    public GameObject arrow;
 
+    public int hits = 0;
+    public Transform arrowFirePoint;
+    public AudioSource arrowSound;
+    public GameObject arrow;
+    public GameObject arrow2;
+    //public Arrow arrowScript;
 
 
     public enum FSMState
@@ -38,6 +41,8 @@ public class EnemyGoblin : EnemyFSM
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        arrowSound = GetComponent<AudioSource>();
+        //arrowScript = arrow.GetComponent<Arrow>();
         //anim.SetBool("isRunning", true);
 
         // range = 3.1f;
@@ -86,7 +91,13 @@ public class EnemyGoblin : EnemyFSM
     {
         facePlayer();
         anim.SetBool("isRunning", true);
-
+        if (playerHeight())
+            rb.velocity = new Vector2(curSpeed, 0);
+        else
+        {
+            anim.SetBool("isIdle", true);
+            curState = FSMState.Idle;
+        }
     }
 
     protected void UpdateAttack1State() //Boxer: close punch
@@ -97,7 +108,11 @@ public class EnemyGoblin : EnemyFSM
         if (attackTime > 1)
         {
             attackTime = 0;
-            Instantiate(arrow, arrowFirePoint.position, arrowFirePoint.rotation);
+            arrowSound.Play();
+            if (facingRight)
+                Instantiate(arrow, arrowFirePoint.position, arrowFirePoint.rotation);
+            else
+                Instantiate(arrow2, arrowFirePoint.position, arrowFirePoint.rotation);
         }
         anim.SetBool("isShooting", true);
         if (hits > 3)
@@ -135,10 +150,7 @@ public class EnemyGoblin : EnemyFSM
 
     protected void UpdateDeadState()
     {
-
         curState = FSMState.Dead;
-
-
     }
 
     protected float playerDistance()
@@ -151,7 +163,7 @@ public class EnemyGoblin : EnemyFSM
     protected bool playerHeight()
     {
         Debug.Log("enemy: " + transform.position.y + " player: " + player.transform.position.y);
-        if (transform.position.y < (player.transform.position.y + 0.25f) && (player.transform.position.y - 0.25f) < transform.position.y)
+        if (transform.position.y < (player.transform.position.y + 1.5f) && (player.transform.position.y - 1.5f) < transform.position.y)
             return true;
         else
             return false;
@@ -177,19 +189,13 @@ public class EnemyGoblin : EnemyFSM
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.CompareTag("Bullet"))
         {
-            //lower player health
-            Debug.Log("Hit player");
+            Debug.Log("Hits is " + hits);
+            hits++;
         }
-    }
-
-    public void OnColliderEnter2D(Collider2D other)
-    {
-        if (other.tag == "Bullet")
-        {
-            //lower player health
-            Debug.Log("Enemy hit: " + hits);
+        else if(other.gameObject.CompareTag("Player") && curState == FSMState.Run)
+        { 
         }
     }
 
