@@ -47,7 +47,6 @@ public class EnemyGoblin : EnemyFSM
 
         // range = 3.1f;
         //initialPos = transform.position;
-        curSpeed = 2.0f;
         elapsedTime = 0.0f;
         health = 100;
         facingRight = true;
@@ -63,7 +62,6 @@ public class EnemyGoblin : EnemyFSM
             case FSMState.Idle: UpdateIdleState(); break;
             case FSMState.Run: UpdateRunState(); break;
             case FSMState.Attack1: UpdateAttack1State(); break;
-            case FSMState.Attack2: UpdateAttack2State(); break;
             case FSMState.Dead: UpdateDeadState(); break;
         }
 
@@ -80,8 +78,11 @@ public class EnemyGoblin : EnemyFSM
 
     protected void UpdateIdleState()
     {
+        hits = 0;
         Debug.Log("inIdleState");
         anim.SetBool("isShooting", false);
+        anim.SetBool("isHit", false);
+        //anim.SetBool("isRunning", false);
         if (playerHeight())
             curState = FSMState.Attack1;
 
@@ -92,19 +93,24 @@ public class EnemyGoblin : EnemyFSM
         facePlayer();
         anim.SetBool("isRunning", true);
         if (playerHeight())
-            rb.velocity = new Vector2(curSpeed, 0);
+        {
+            if (facingRight)
+                rb.velocity = new Vector2(curSpeed, 0);
+            else
+                rb.velocity = new Vector2(-curSpeed, 0);
+      }
         else
         {
-            anim.SetBool("isIdle", true);
+            anim.SetBool("isRunning", false);
             curState = FSMState.Idle;
         }
     }
 
     protected void UpdateAttack1State() //Boxer: close punch
     {
-        Debug.Log("In attack1 state");
+        //Debug.Log("In attack1 state");
         facePlayer();
-        Debug.Log(attackTime);
+        //Debug.Log(attackTime);
         if (attackTime > 1)
         {
             attackTime = 0;
@@ -118,35 +124,12 @@ public class EnemyGoblin : EnemyFSM
         if (hits > 3)
         {
             anim.SetBool("isHit", true);
+            //anim.SetBool("isShooting", false);
             curState = FSMState.Run;
         }
         else if (!playerHeight())
             curState = FSMState.Idle;
     }
-
-    protected void UpdateAttack2State() //Boxer: far strong punch
-    {
-        /*attackTime += Time.deltaTime;
-        Debug.Log("In attack2 state");
-        anim.SetBool("isAttacking1", false);
-        anim.SetBool("isRunning", false);
-        facePlayer();
-        rb.velocity = new Vector2(curSpeed * 1.25f, 0);
-        anim.SetBool("isAttacking2", true);
-        distance = playerDistance();
-        if (distance > 4.0f || transform.position.x > initialPos.x)
-            curState = FSMState.Patrol;
-        //else if (distance > 2.0f && distance <= 4.0f)
-        //    curState = FSMState.Attack2;
-        else if (attackTime < 1.5f)
-        {
-            curState = FSMState.Idle;
-        }
-        else if (distance <= 2.0f)
-            curState = FSMState.Attack1;
-        */
-    }
-
 
     protected void UpdateDeadState()
     {
@@ -162,7 +145,7 @@ public class EnemyGoblin : EnemyFSM
 
     protected bool playerHeight()
     {
-        Debug.Log("enemy: " + transform.position.y + " player: " + player.transform.position.y);
+        //Debug.Log("enemy: " + transform.position.y + " player: " + player.transform.position.y);
         if (transform.position.y < (player.transform.position.y + 1.5f) && (player.transform.position.y - 1.5f) < transform.position.y)
             return true;
         else
@@ -195,7 +178,8 @@ public class EnemyGoblin : EnemyFSM
             hits++;
         }
         else if(other.gameObject.CompareTag("Player") && curState == FSMState.Run)
-        { 
+        {
+            player.GetComponent<PlayerControls>().TakeDamage(20);
         }
     }
 
