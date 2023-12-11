@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Enemy2 : EnemyFSM
 {
-
     private Rigidbody2D rb;
     private Animator anim;
     public float range;//enemy will travel from middle point + range on either side
@@ -38,10 +37,10 @@ public class Enemy2 : EnemyFSM
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("isRunning", true);
-        
-       // range = 3.1f;
+
+        // range = 3.1f;
+        //curSpeed = 2.0f;
         initialPos = transform.position;
-        curSpeed = 2.0f;
         elapsedTime = 0.0f;
         health = 100;
         facingRight = true;
@@ -75,13 +74,13 @@ public class Enemy2 : EnemyFSM
 
     protected void UpdatePatrolState()
     {
-        Debug.Log("In patrol state");
+        Debug.Log(gameObject.name + " In patrol state");
         distance = playerDistance();
-        Debug.Log("Player dist is " + distance);
-        if (distance > 5.0f && !playerHeight())
+        Debug.Log(gameObject.name + "Player dist is " + distance);
+        if (!playerHeight())
         {
             elapsedTime += Time.deltaTime; //used so enemy doesn't flip infinitely at end points
-            anim.SetBool("isAttacking1", false);
+            //anim.SetBool("isAttacking1", false);
             anim.SetBool("isAttacking2", false);
             anim.SetBool("isRunning", true);
             //curState = FSMState.Patrol;
@@ -122,7 +121,7 @@ public class Enemy2 : EnemyFSM
                     rb.velocity = new Vector2(-curSpeed, 0);
             }
         }
-        else if (distance > 2.0f && distance <= 4.0f)
+        else if (playerHeight() && distance > 2.0f && distance <= 4.0f)
             curState = FSMState.Attack2;
     }
 
@@ -137,38 +136,43 @@ public class Enemy2 : EnemyFSM
     protected void UpdateAttack2State() //Boxer: far strong punch
     {
         attackTime += Time.deltaTime;
-        Debug.Log("In attack2 state");
+        Debug.Log(gameObject.name + "In attack2 state");
         anim.SetBool("isAttacking1", false);
-        anim.SetBool("isRunning", false);
+        //anim.SetBool("isRunning", false);
         facePlayer();
-        rb.velocity = new Vector2(curSpeed * 1.25f, 0);
+        //if (facingRight)
+        //    rb.velocity = new Vector2(curSpeed, 0);
+        //else
+        //    rb.velocity = new Vector2(-curSpeed, 0);
         anim.SetBool("isAttacking2", true);
         distance = playerDistance();
-        if (distance > 4.0f || transform.position.x > initialPos.x)
+        if ((distance > 4.0f && !playerHeight()) || transform.position.x > initialPos.x)
             curState = FSMState.Patrol;
         //else if (distance > 2.0f && distance <= 4.0f)
         //    curState = FSMState.Attack2;
-        else if(attackTime < 1.5f)
-        {
-            curState = FSMState.Idle;
-        }
-        else if (distance <= 2.0f)
+        //else if(attackTime < 1.5f)
+        //{
+        //    curState = FSMState.Idle;
+        //}
+        else if (distance > 2.0f && playerHeight())
+            curState = FSMState.Attack2;
+        else if (distance <= 2.0f && playerHeight())
             curState = FSMState.Attack1;
     }
     protected void UpdateAttack1State() //Boxer: close punch
     {
+        anim.SetBool("isAttacking2", false);
         attackTime = 0;
         Debug.Log("In attack1 state");
-        anim.SetBool("isAttacking2", false);
-        anim.SetBool("isRunning", false);
+        //anim.SetBool("isRunning", false);
         facePlayer();
         anim.SetBool("isAttacking1", true);
         distance = playerDistance();
-        if (distance > 4.0f)
+        if (distance > 4.0f && !playerHeight())
             curState = FSMState.Patrol;
-        else if (distance > 2.0f)
+        else if (distance > 2.0f && playerHeight())
             curState = FSMState.Attack2;
-        else if (distance < 2.0f)
+        else if (distance < 2.0f && playerHeight())
             curState = FSMState.Attack1;
         //else if (distance <= 2.0f)
         //    curState = FSMState.Attack1;
@@ -192,11 +196,17 @@ public class Enemy2 : EnemyFSM
 
     protected bool playerHeight()
     {
-        //Debug.Log("enemy: " + transform.position.y + " player: " + player.transform.position.y);
-        if(transform.position.y < player.transform.position.y + 0.25f && player.transform.position.y-0.25f < transform.position.y)
+        Debug.Log("enemy: " + transform.position.y + " player: " + player.transform.position.y);
+        if (transform.position.y < (player.transform.position.y + 0.5f) && (player.transform.position.y - 0.5f) < transform.position.y)
+        {
+            Debug.Log(gameObject.name + "Player height true");
             return true;
+        }
         else
+        {
+            Debug.Log(gameObject.name + "Player height false");
             return false;
+        }
     }
 
     private void facePlayer()

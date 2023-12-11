@@ -35,7 +35,6 @@ public class EnemyControl : EnemyFSM
     public float curSpeed;
 
     //Whether the NPC is destroyed or not
-    private bool bDead;
     private int health;
 
     public GameObject player;
@@ -49,7 +48,6 @@ public class EnemyControl : EnemyFSM
         anim.SetBool("isRunning", true);
         curState = FSMState.Patrol;
         curSpeed = 2.0f;
-        bDead = false;
         elapsedTime = 0.0f;
         health = 100;
         facingRight = true;
