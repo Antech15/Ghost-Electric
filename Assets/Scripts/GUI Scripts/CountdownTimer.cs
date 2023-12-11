@@ -6,6 +6,7 @@ using TMPro;
 
 public class CountdownTimer : MonoBehaviour
 {
+    public GameObject deathPanel;
     public TextMeshProUGUI Timer;
     float currentTime = 0f;
     float startingTime = 60;
@@ -25,6 +26,7 @@ public class CountdownTimer : MonoBehaviour
         Timer.text = currentTime.ToString("0");
 
         if(currentTime <= 0){
+            deathPanel.SetActive(true);
             currentTime = 0;
         }
     }

@@ -8,6 +8,9 @@ public class PlayerControls : MonoBehaviour
     // for animation
     public Animator animator;
 
+
+    
+    public GameObject deathPanel; // Reference to your DeathPanel GameObject // Reference to the DeathPanel GameObject
     private Ray ray;
 	private RaycastHit2D ray_cast_hit;
     public GameObject fx_prefab;
@@ -17,7 +20,7 @@ public class PlayerControls : MonoBehaviour
     public AudioSource jumpSound;
 
     public AudioSource winSound;
-
+    bool PlayerDead = false;
     public AudioSource healSound;
     public float moveSpeed = 5f;
     public float jumpSpeed = 15f;
@@ -47,10 +50,18 @@ public class PlayerControls : MonoBehaviour
 
         // Freeze rotation along the Z-axis to prevent falling over
         rb.freezeRotation = true;
+
+        deathPanel.SetActive(false);
+       
     }
 
     void Update()
     {
+        if(PlayerDead)
+        {
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
+        }
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = 0f;
         isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
@@ -139,8 +150,12 @@ public class PlayerControls : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
+        
         healthBar.SetHealth(currentHealth);
+        if(currentHealth<=0)
+        {
+            killPlayer();
+        }
         
     }
 
@@ -165,9 +180,10 @@ public class PlayerControls : MonoBehaviour
         Debug.Log("Collision Detected");
         if(other.gameObject.CompareTag("Enemy"))
         {
-        // The player collided with an object tagged as "Enemy"
-        // You can add your logic here, such as playing a sound or taking damage.
-        // healSound.Play();
+            // The player collided with an object tagged as "Enemy"
+            // You can add your logic here, such as playing a sound or taking damage.
+            // healSound.Play();
+            Debug.Log(other.gameObject.name + "Player touched enemy");
             TakeDamage(20);
         // Destroy(gameObject); // This line would destroy the player, be cautious if this is intended.
         }
@@ -181,6 +197,12 @@ public class PlayerControls : MonoBehaviour
     public void winSoundd()
     {
         winSound.Play();
+    }
+
+    public void killPlayer()
+    {
+        deathPanel.SetActive(true);
+        PlayerDead = true;
     }
 
     IEnumerator ResetTrigger(Collider2D collider)
