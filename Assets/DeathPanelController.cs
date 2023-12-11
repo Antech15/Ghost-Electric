@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DeathPanelController : MonoBehaviour
 {
 
-   private int buttonWidth;
+    private int buttonWidth;
     private int buttonHeight;
     private int origin_x;
     private int origin_y;
@@ -20,19 +20,7 @@ public class DeathPanelController : MonoBehaviour
         origin_x = Screen.width / 2 - buttonWidth / 2;
         origin_y = Screen.height / 2 - buttonHeight * 2;
     }
-    /*
-    void OnGUI()
-    {
-        GUIStyle buttonStyle = new GUIStyle(GUI.skin.button);
-        buttonStyle.fontSize = Mathf.RoundToInt(Screen.width * 0.02f); 
-
-        // Draw a button to start the game
-        if (GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Start Game", buttonStyle))
-        {
-          SceneManager.LoadScene("Level 1 - Outskirts");//Jumos to levelplayertest
-        }
-    }
-	*/
+    
 	
     void OnGUI() {
         GUIStyle buttonStyle = new GUIStyle(GUI.skin.button);
@@ -47,18 +35,5 @@ public class DeathPanelController : MonoBehaviour
 		}
 	}
     
-    /*
-    // Methods to be called when buttons are clicked
-    public void OnRestartButtonClick()
-    {   
-        Debug.Log("Restart button clicked");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void OnQuitButtonClick()
-    {
-        Debug.Log("Quit button clicked");
-        SceneManager.LoadScene("Scene 0 - Title");
-    }
-    */
+    
 }
