@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6871523634243280264}
   - component: {fileID: 6127018905344172778}
   - component: {fileID: 5958684134440210853}
-  - component: {fileID: 2363154990509894900}
   - component: {fileID: -3303763191020237830}
+  - component: {fileID: 8195854129991873503}
   m_Layer: 0
   m_Name: BiggerArrow
   m_TagString: Arrow
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 774444976070165533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.46, y: 15.44, z: 0}
+  m_LocalPosition: {x: -7.7187996, y: 0.07194495, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102,7 +102,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.25
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -114,20 +114,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2363154990509894900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774444976070165533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5aae889456f074dabcc8757b12078b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
-  rb: {fileID: 5958684134440210853}
 --- !u!70 &-3303763191020237830
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -157,9 +143,23 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -4.5004e-10, y: -0.0037752097}
   m_Size: {x: 1.0000039, y: 0.41529912}
   m_Direction: 1
+--- !u!114 &8195854129991873503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774444976070165533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5aae889456f074dabcc8757b12078b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  rb: {fileID: 5958684134440210853}

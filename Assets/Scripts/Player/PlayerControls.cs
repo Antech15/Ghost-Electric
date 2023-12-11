@@ -167,9 +167,10 @@ public class PlayerControls : MonoBehaviour
         Debug.Log("Collision Detected");
         if(other.gameObject.CompareTag("Enemy"))
         {
-        // The player collided with an object tagged as "Enemy"
-        // You can add your logic here, such as playing a sound or taking damage.
-        // healSound.Play();
+            // The player collided with an object tagged as "Enemy"
+            // You can add your logic here, such as playing a sound or taking damage.
+            // healSound.Play();
+            Debug.Log(other.gameObject.name + "Player touched enemy");
             TakeDamage(20);
         // Destroy(gameObject); // This line would destroy the player, be cautious if this is intended.
         }
