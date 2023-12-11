@@ -14,6 +14,11 @@ public class Guns : MonoBehaviour
     public TextMeshProUGUI reloadingText; // Reference to the UI text element for displaying reloading text
     public float fadeDuration = 0.5f; // Duration of the fading effect
 
+    private bool canShoot = true;  // New variable to track whether shooting is allowed
+    public float fireRate = 0.5f;  // Adjust the fire rate as needed (shots per second)
+    private float nextShotTime = 0f;  // Time when the next shot is allowed
+
+
     void Start()
     {
         AudioSource[] audioSources = GetComponentsInChildren<AudioSource>();
@@ -25,7 +30,7 @@ public class Guns : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && canShoot)
         {
             Shoot();
             Debug.Log("Shoot");
@@ -41,16 +46,26 @@ public class Guns : MonoBehaviour
     {
         if(currentClip>0)
         {
+            canShoot = false; // Disable shooting during the cooldown
             currentClip--;
            
             // Shooting logic
             gunshot.Play();
             Instantiate(arBulletPrefab, arFirePoint.position, arFirePoint.rotation);
+            // Set the cooldown timer for the next shot
+            nextShotTime = Time.time + 1f / fireRate;
             if(currentClip <=0)
             {
                 StartCoroutine(DisplayReloadPrompt());
             }
+            StartCoroutine(EnableShootingCooldown());
         }
+    }
+
+    IEnumerator EnableShootingCooldown()
+    {
+        yield return new WaitForSeconds(0.12f); // Wait for the cooldown duration
+        canShoot = true; // Enable shooting after the cooldown
     }
 
     void Reload()
