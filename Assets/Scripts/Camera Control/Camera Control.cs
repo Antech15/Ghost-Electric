@@ -17,7 +17,8 @@ public class CameraControl : MonoBehaviour
 
             // Check if the player is jumping
             bool isJumping = target.GetComponent<PlayerControls>().isJumping; // Access 'isJumping' like a variable
-
+            desiredPosition.y -= lowerYOffset;
+            /*
             if (isJumping)
             {
                 desiredPosition.y = transform.position.y; // Prevent the camera from following the player's vertical position
@@ -26,6 +27,7 @@ public class CameraControl : MonoBehaviour
             {
                 desiredPosition.y -= lowerYOffset; // Offset the camera to keep the player in the lower half of the view
             }
+            */
 
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
             transform.position = smoothedPosition;
