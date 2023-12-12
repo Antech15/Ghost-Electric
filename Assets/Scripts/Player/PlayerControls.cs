@@ -11,6 +11,7 @@ public class PlayerControls : MonoBehaviour
 
     
     public GameObject deathPanel; // Reference to your DeathPanel GameObject // Reference to the DeathPanel GameObject
+    public GameObject winPanel; // Reference to your DeathPanel GameObject // Reference to the DeathPanel GameObject
     private Ray ray;
 	private RaycastHit2D ray_cast_hit;
     public GameObject fx_prefab;
@@ -52,6 +53,7 @@ public class PlayerControls : MonoBehaviour
         rb.freezeRotation = true;
 
         deathPanel.SetActive(false);
+        winPanel.SetActive(false);
        
     }
 
@@ -141,7 +143,7 @@ public class PlayerControls : MonoBehaviour
 
     private bool IsPlayerGrounded()
     {
-        int groundLayerMask = LayerMask.GetMask("Ground");
+        int groundLayerMask = LayerMask.GetMask("Ground", "Platform", "platform");
         Vector2 boxSize = new Vector2(0.9f, 0.1f);
         Collider2D hit = Physics2D.OverlapBox(transform.position, boxSize, 0f, groundLayerMask);
         return hit != null;
@@ -197,6 +199,7 @@ public class PlayerControls : MonoBehaviour
     public void winSoundd()
     {
         winSound.Play();
+        winPanel.SetActive(true);
     }
 
     public void killPlayer()
