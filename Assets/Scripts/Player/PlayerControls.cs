@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerControls : MonoBehaviour
 {
@@ -33,7 +34,9 @@ public class PlayerControls : MonoBehaviour
     public bool isJumping = false;
     public bool isFalling = false; // New variable for falling
     private bool isFacingRight = true; // New variable to track facing direction
-
+    public List<Item> inventory = new List<Item>();
+    private Item selectedItem;
+    public TMP_Text noteText;
 
     void Start()
     {
@@ -73,7 +76,16 @@ public class PlayerControls : MonoBehaviour
         animator.SetBool("IsRunning", isRunning);
         animator.SetBool("IsFalling", isFalling); // Update the IsFalling parameter
         animator.SetBool("IsGrounded", isGrounded);
+        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            HideNoteOnScreen();
+        }
 
+        // if (Input.GetKeyDown(KeyCode.Q))
+        // {
+        //     InteractWithDialogueTrigger();
+        // }
         
         //logic for dropping down through objects wirth the "Platform" Tag and "Ground" Layer when pressing the down arrow or s key twice quickly
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
@@ -113,6 +125,7 @@ public class PlayerControls : MonoBehaviour
         {
             transform.position += new Vector3(move.x, move.y, 0) * moveSpeed * Time.deltaTime;
         }
+        
     }
 
     private void FlipSprite(float moveX)
@@ -198,4 +211,43 @@ public class PlayerControls : MonoBehaviour
     yield return new WaitForSeconds(0.5f); // wait for 0.5 seconds
     collider.isTrigger = false;
 }
+
+
+public void SelectItem(Item item)
+{
+    selectedItem = item;
+
+    // If the selected item is a note, display it on the screen
+    if (item.isNote)
+    {
+        DisplayNoteOnScreen(item.description);
+    }
+    else
+    {
+        // Implement logic to display information about the selected item
+    }
+}
+
+private void DisplayNoteOnScreen(string text)
+{
+    noteText.text = text;
+}
+
+private void HideNoteOnScreen()
+{
+    noteText.text = "";
+    // Optionally, perform other actions when hiding the note
+}
+
+  private void InteractWithDialogueTrigger()
+    {
+        // You may want to raycast from the player to check if there's a dialogue trigger in front of them
+        // For simplicity, let's assume the player is interacting with the trigger directly
+
+        DialogueTrigger dialogueTrigger = GetComponent<DialogueTrigger>();
+        if (dialogueTrigger != null)
+        {
+            //dialogueTrigger.StartDialogue();
+        }
+    }
 }
