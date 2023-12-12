@@ -5,12 +5,13 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public Score scoreCount;
-    public int health = 100;
+    public int health;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
 
     void Start()
     {
+        health = 100;
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
     }

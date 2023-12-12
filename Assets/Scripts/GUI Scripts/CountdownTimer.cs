@@ -9,7 +9,7 @@ public class CountdownTimer : MonoBehaviour
     public GameObject deathPanel;
     public TextMeshProUGUI Timer;
     float currentTime = 0f;
-    float startingTime = 60;
+    public float startingTime = 180;
     //CountDown Timer;
     // Start is called before the first frame update
     void Start()
