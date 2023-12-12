@@ -123,11 +123,11 @@ public class Enemy3 : EnemyFSM
         distance = playerDistance();
         if (!playerHeight() || !playerInEnemyRange())
             curState = FSMState.Patrol;
-        else if (playerHeight() && playerInEnemyRange() && distance < attack1HighRange && distance > attack1LowRange)
+        else if (distance < attack1HighRange && distance > attack1LowRange)//playerHeight() && playerInEnemyRange() && distance < attack1HighRange && distance > attack1LowRange)
             curState = FSMState.Attack1;
-        else if (playerHeight() && playerInEnemyRange() && distance <= attack1LowRange)
+        else if (distance < attack1LowRange)//playerHeight() && playerInEnemyRange() && distance < attack1LowRange)
             curState = FSMState.Attack2;
-        else if (playerHeight() && playerInEnemyRange())
+        else//if (playerHeight() && playerInEnemyRange())
         {
             facePlayer();
             if (facingRight)
@@ -141,9 +141,12 @@ public class Enemy3 : EnemyFSM
     {
         Debug.Log(gameObject.name + "In attack1 state");
         facePlayer();
-        attack1Sound.Play();
-        anim.SetTrigger("isAttacking1");
-        attack1Sound.Play();
+        if (attackTime > 2.0f)
+        {
+            attackTime = 0;
+            attack1Sound.Play();
+            anim.SetTrigger("isAttacking1");
+        }
         curState = FSMState.Chase;
 
 
@@ -152,10 +155,12 @@ public class Enemy3 : EnemyFSM
     {
         Debug.Log(gameObject.name + "In attack2 state");
         facePlayer();
-        attack2Sound.Play();
-        anim.SetTrigger("isAttacking2");
-        //yield return new WaitForSeconds(14);
-       // anim.SetBool("isAttacking2", false);
+        if (attackTime > 2.0f)
+        {
+            attackTime = 0;
+            attack2Sound.Play();
+            anim.SetTrigger("isAttacking2");
+        }
         curState = FSMState.Chase;
     }
     protected float playerDistance()
@@ -168,14 +173,14 @@ public class Enemy3 : EnemyFSM
     protected bool playerHeight()
     {
         //Debug.Log("enemy: " + transform.position.y + " player: " + player.transform.position.y);
-        if (transform.position.y < (player.transform.position.y + 0.65f) && (player.transform.position.y - 0.65f) < transform.position.y)
+        if (transform.position.y < (player.transform.position.y + 0.75f) && (player.transform.position.y - 0.75f) < transform.position.y)
         {
-            Debug.Log(gameObject.name + "Player height true");
+            //Debug.Log(gameObject.name + "Player height true");
             return true;
         }
         else
         {
-            Debug.Log(gameObject.name + "Player height false");
+            //Debug.Log(gameObject.name + "Player height false");
             return false;
         }
     }
