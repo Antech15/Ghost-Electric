@@ -39,8 +39,11 @@ public class EnemyHealth : MonoBehaviour
 
     void Explode()
     {
+        //activate 'Exit' game object's circle collider
+        GameObject.Find("Exit").GetComponent<CircleCollider2D>().enabled = true;
         CreateExplosion(transform.position);
         Destroy(gameObject);
+        
     }
 
     void CreateExplosion(Vector3 position)
