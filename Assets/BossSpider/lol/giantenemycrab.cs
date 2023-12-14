@@ -32,10 +32,15 @@ public class giantenemycrab : MonoBehaviour
         //get the current health from the enemies EnemyHealth script
         if (GetComponent<EnemyHealth>().health <= 0)
         {
+
+            
             //play win music attached to player
            
             targetPlayer.GetComponent<PlayerControls>().winSoundd();
         
+        
+
+
             animator.SetTrigger("Death");
             Destroy(gameObject, 7f);
 
@@ -89,7 +94,7 @@ public class giantenemycrab : MonoBehaviour
                         PerformAttack2();
                     }
 
-                    yield return new WaitForSeconds(1f);
+                    yield return new WaitForSeconds(4f);
                 }
             }
             else
